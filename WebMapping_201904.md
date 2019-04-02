@@ -4,7 +4,9 @@
 
 **Digitized Maps vs Web Maps**
 
-![a static map](web-mapping-201904-images/parkingmeter-staticheatmap.png)  ![a dynamic map](web-mapping-201904-images/parkingmeter-webheatmap.gif)
+![a static map](images/parkingmeter-staticheatmap.png)  ![a dynamic map](images/parkingmeter-webheatmap.gif)
+
+Web maps, or slippy maps, are based on tiles that load on demand so you limit the data you use to the data you need to see. For more orientation to how they are structured (zoom levels and distibutions) visit this [wikipage](https://wiki.openstreetmap.org/wiki/Slippy_map_tilenames)
 
 ## What do we need to make them? PART I: Leaflet
 
@@ -14,9 +16,9 @@
 - Web Server
 - Web Developer Tools
 
-## Setting up a development environment
+## Set up
 
-The first thing we need to do create a web map using Leaflet is to set up a development environment. This allows you to write code and test how your map looks and works.
+The first thing we need to do to create a web map using Leaflet is to set up a development environment. This allows you to write code and test how your map looks and works.
 
 **A Web Browser**
 
@@ -35,15 +37,19 @@ If you don't want to bother with setting up a local server, use Brackets! Its "L
 
 **A Web Server**
 
-A "server" is needed to gather the files and deliver them to the browser so it can then render the information correctly. A server is especially necessary when using JavaScript to make what are known as [asynchronous requests](http://rowanmanning.com/posts/javascript-for-beginners-async/) to load files and data into our web application after the web page initially loads.
+A "server" is needed to gather the files and deliver them to the browser correctly so the brower can properly interpret and render the information. For example, a server is necessary when using JavaScript to make what are known as [asynchronous requests](http://rowanmanning.com/posts/javascript-for-beginners-async/) to load files and data into our web application after the web page initially loads.
 
-When we put together a web map, we test it on our own computer before serving it to the web, thus the need for a "local server." Here is a nice [GIST](https://gist.github.com/jgravois/5e73b56fa7756fd00b89) for setting up a local server on your machine.
+When we put together a web map, we test it on our own computer before serving it to the web, thus the need for a "local server." Here is a nice [gist](https://gist.github.com/jgravois/5e73b56fa7756fd00b89) for setting up a local server on your machine.
 
 OR, as mentioned, the [Brackets](http://brackets.io) text editor allows you to bypass this because it runs "Live Preview".
 
 Now that you have a local server running, open the *blahblahblah/index.html* file (or open this file from within Brackets using the Live Preview).
 
-## Okay, let's make a map!
+## Okay, let's make a map! But wait. What IS Leaflet?
+
+Leaflet is an open-source JavaScript library for mobile-friendly interactive maps.
+
+Let's take a look at how it works with a simple simple webmap:
 
 ```html
 <!DOCTYPE html>
@@ -88,9 +94,11 @@ Within this code we have 3 elements that help create our map:
 - [CSS](https://www.w3schools.com/css/default.asp) (form) - the design of the webpage
 - [Javascript](https://www.w3schools.com/js/default.asp) (behavior) - adding the bits that make this a non-static map!
 
-Here is the exact same code with a few options added in (but commented out) for different base maps from that resource:
+The code in the index.html file in this repo is the same as the above with a few options alternative options added in (but commented out) for different base maps. Where might you find these? There are a bunch collected for you on this lovely [webpage](http://leaflet-extras.github.io/leaflet-providers/preview/) where you can click on the thumbnails to get blocks of code to copy and paste.
 
-```html
+We can add in another JavaScript library called jquery to help us load geojson data onto our map:
+
+```
 <!DOCTYPE html>
 <html>
 <head>
@@ -101,6 +109,10 @@ Here is the exact same code with a few options added in (but commented out) for 
   <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"
     integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg=="
     crossorigin=""></script>
+  <script
+    src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous"></script>
   <style>
     #map{ width: 900px; height: 500px; }
   </style>
@@ -112,7 +124,7 @@ Here is the exact same code with a few options added in (but commented out) for 
   <script>
 
   // initialize the map
-  var map = L.map('map').setView([39.75, -105.01], 14);
+  var map = L.map('map').setView([39.75, -105.01], 12);
 
   // load a tile layer (see http://leaflet-extras.github.io/leaflet-providers/preview/ and copy w/o ""})."" or pick one below)
 
@@ -122,28 +134,26 @@ Here is the exact same code with a few options added in (but commented out) for 
       attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, under <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">ODbL</a>',
       maxZoom: 17,
       minZoom: 9
-
-  // var Esri_WorldTopoMap = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/{z}/{y}/{x}', {
-  // 	attribution: 'Tiles &copy; Esri &mdash; Esri, DeLorme, NAVTEQ, TomTom, Intermap, iPC, USGS, FAO, NPS, NRCAN, GeoBase, Kadaster NL, Ordnance Survey, Esri Japan, METI, Esri China (Hong Kong), and the GIS User Community'
-
-  // var NASAGIBS_ViirsEarthAtNight2012 = L.tileLayer('https://map1.vis.earthdata.nasa.gov/wmts-webmerc/VIIRS_CityLights_2012/default/{time}/{tilematrixset}{maxZoom}/{z}/{y}/{x}.{format}', {
-  // 	attribution: 'Imagery provided by services from the Global Imagery Browse Services (GIBS), operated by the NASA/GSFC/Earth Science Data and Information System (<a href="https://earthdata.nasa.gov">ESDIS</a>) with funding provided by NASA/HQ.',
-  // 	bounds: [[-85.0511287776, -179.999999975], [85.0511287776, 179.999999975]],
-  // 	minZoom: 1,
-  // 	maxZoom: 8,
-  // 	format: 'jpg',
-  // 	time: '',
-  // 	tilematrixset: 'GoogleMapsCompatible_Level'
-
-
     }).addTo(map);
 
-  </script>
+// load GeoJSON from an external file
+$.getJSON("./data/firestations.geojson",function(data){
+//  add GeoJSON layer to the map once the file is loaded
+L.geoJson(data).addTo(map);
+});
+
+</script>
 </body>
 </html>
 ```
+What is different?
 
-#BLAH BLAH BLAH
+1) We added in another src command to find another JavaScript library
+2) Using the jquery library functions, we added a layer onto our background tiles after retrieving our data.
+
+Notice, we changed the zoom level for the map initialization! This gave us a broader view to see more of the fire stations on load.
+
+Note: The data we're using was pulled from the city of Denver's open data [portal](https://www.denvergov.org/opendata/) as shapefiles and then converted to geojson files using QGIS.
 
 ## What do we need to make them? PART II: qgis2web plugin for QGIS
 
