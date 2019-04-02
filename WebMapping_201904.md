@@ -96,7 +96,7 @@ The code in the index.html file in this repo is the same as the above with a few
 
 Now that you have a local server running, open the *index.html* file (or open this file from within Brackets using the Live Preview). See what happens! Change up your tiles and pick a map style you like.
 
-Hint: There are different ways to quickly comment out lines of code or reinstate them. In Atom on a mac, use "command /" after highlighting your lines of interest.
+Keyboard shortcuts for commenting out code: There are different ways to quickly comment out lines of code or reinstate them. In Atom on a mac, use "command /" after highlighting your lines of interest.
 
 **Adding our own data!**
 
@@ -157,12 +157,10 @@ What is different?
 
 Also, we changed the zoom level for the map initialization! This gave us a broader view to see more of the fire stations on load.
 
-Note: The data we're using was pulled from the city of Denver's open data [portal](https://www.denvergov.org/opendata/) as shapefiles and then converted to geojson files using QGIS.
+Note: The data we're using was pulled from the city of Denver's open data [portal](https://www.denvergov.org/opendata/) as shapefiles and then converted to GeoJSON files using QGIS.
 
 # What do we need to make them?
 # PART II: qgis2web plugin for QGIS
-
-## Introducing the qgis2web plugin!
 
 For those of you new to QGIS, there is a strong developer community surrounding this open source software and great plugins are continually being created and improved.
 
@@ -184,7 +182,7 @@ The qgis2web plugin is a marvelous way of designing our maps in QGIS, then havin
 
 We've already added a basemap to our project, but let's make our map a little more interesting before we use qgis2web to export our map to the web. One great thing about interactive web maps is the possiblity of pop-ups that show the attribute information behind the features on our map.
 
-Add the data layer parkingmeters.geojson to your QGIS map. You should be able to merely drag it from your folder and drop it into the blank area below the OSM Standard basemap layer.
+Add the data layer *parkingmeters.geojson* to your QGIS map. You should be able to merely drag it from your folder and drop it into the blank area below the OSM Standard basemap layer.
 
 **Examine your data!**
 
@@ -193,9 +191,11 @@ Once the parkingmeters layer appears in your QGIS contents, right click on the l
 **Symbolize your data**
 
 *Simple Symbol*
+
 Right click on the layer again, but this time select "Properties". This will open up a new window with a number of menu options. Pick "Symbology". Keep the default Simple Symbol option for exploring pop-ups, but play with the color and marker options.
 
 *Heat Map*
+
 Alternatively, if you don't want to mess around with pop-ups, on the Symbology pane at the very top, change the Simple Symbol option in the drop down to "Heat Map".  Select the color ramp "Reds" and change the layer rendering's opacity to something less than 100%:
 
 ![Options for heat map symbology](images/qgis-heatmapsymbology.png)
@@ -208,4 +208,24 @@ For the pop-ups, we may not want all of the attributes with their default values
 
 In the example above, the alias for ZONE is written as “Zone” to get rid of the all-caps. If we wanted this field to not show in the pop-up at all, we would use the drop-down to change “Text Edit” to “Hidden.”
 
+**Introducing the qgis2web plugin!**
+
+*Layers and Groups*
+
+Choose which layers should be visible on your web map
+
+*Appearance*
+
+Tune the visuals! Here, we've selected to highlight our feature when we hover over it:
+
+*Leaflet vs. OpenLayers*
+
+These are different libraries and treat the behavior of data differently.  Toggle back and forth between the two and update the preview to explore.  For example, how does the heat map symbology from QGIS work in OpenLayers?
+
+*Export*
+
+Once you're happy with the way your map is set up, go to the export tab and pick a folder where qgis2web will write all the HTML, CSS and JavaScript needed for you to have a happy *index.html*
+
 The maintainer of qgis2web, Tom Chadwin, has further help for this plugin on his [wiki](https://github.com/tomchadwin/qgis2web/wiki)
+
+**Have fun with these different methods of creating web maps!**
