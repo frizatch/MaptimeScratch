@@ -165,6 +165,8 @@ What is different?
 
 Also, we changed the zoom level for the map initialization! This gave us a broader view to see more of the fire stations on load.
 
+Copy and paste these new sections into your *index.html* file. If you're using your own data, be sure to change the file names in the appropriate places!  (Also, if your data is NOT in GeoJSON format already, you can easily convert it in QGIS!)
+
 Note: The data we're using was pulled from the city of Denver's open data [portal](https://www.denvergov.org/opendata/) as shapefiles and then converted to GeoJSON files using QGIS.
 
 # What do we need to make them?
