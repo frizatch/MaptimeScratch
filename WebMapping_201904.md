@@ -2,9 +2,11 @@
 
 ## What is a web map anyway?
 
-**Static Maps vs Web Maps**
+**Digitized Maps vs Web Maps**
 
-## What do we need to make them?
+![a static map](web-mapping-201904-images/parkingmeter-staticheatmap.png)  ![a dynamic map](web-mapping-201904-images/parkingmeter-webheatmap.gif)
+
+## What do we need to make them? PART I: Leaflet
 
 - A Web Browser
 - A Text Editor
@@ -14,15 +16,15 @@
 
 ## Setting up a development environment
 
-There are many [lessons and resources](http://maptime.io/lessons-resources/) available on the web for getting started with web mapping. But often, getting the development environment set up so you can write code and test your map is the first roadblock. Let's consider the principle components of a web development process. These are what you need to have available every time you begin web map design and development.
+The first thing we need to do create a web map using Leaflet is to set up a development environment. This allows you to write code and test how your map looks and works.
 
 **A Web Browser**
 
-Web Mapping is an unusual form of Cartography in that we primarily make the maps using the same medium with which we develop them. The web browser is a crucial component of our technology stack. Most web map developers use Chrome or Firefox, as should you. Make sure you have installed recent updates to your browser, and begin by opening your Web Browser.
+While were making a map to be seen in a browser, we use a brower. Pretty simple. But not all browsers are created equally. Use Chrome or Firefox when you're doing web development.
 
 **A Text Editor**
 
-Developers build web maps by writing plain text. Text editors designed for web development facilitate this, particular by highlighting different parts of the code syntax. Install and open one of the following:
+To use Leaflet to build our webmap, we'll be working directly in text. You'll want a text editor that helps you see code easily by highlighting the different functions of the syntax. These three are are commonly used:
 
 * [Brackets](http://brackets.io/)
 * [Sublime](https://www.sublimetext.com/)
@@ -33,11 +35,9 @@ If you don't want to bother with setting up a local server, use Brackets! Its "L
 
 **A Web Server**
 
-While a web browser application interprets and renders the files that compose our web maps, it doesn't do this by itself. It requires a "server" to gather the files and deliver them to the browser correctly. A server is especially necessary when using JavaScript to make what are known as [asynchronous requests](http://rowanmanning.com/posts/javascript-for-beginners-async/) to load files and data into our web application after the web page initially loads.
+A "server" is needed to gather the files and deliver them to the browser so it can then render the information correctly. A server is especially necessary when using JavaScript to make what are known as [asynchronous requests](http://rowanmanning.com/posts/javascript-for-beginners-async/) to load files and data into our web application after the web page initially loads.
 
-When we put together a web map, we test it on our own computer before serving it to the web, thus the need for a "local server"
-
-Here is a nice [GUIDE](https://gist.github.com/jgravois/5e73b56fa7756fd00b89) for setting up a local server on your machine.
+When we put together a web map, we test it on our own computer before serving it to the web, thus the need for a "local server." Here is a nice [GIST](https://gist.github.com/jgravois/5e73b56fa7756fd00b89) for setting up a local server on your machine.
 
 OR, as mentioned, the [Brackets](http://brackets.io) text editor allows you to bypass this because it runs "Live Preview".
 
@@ -144,3 +144,11 @@ Here is the exact same code with a few options added in (but commented out) for 
 ```
 
 #BLAH BLAH BLAH
+
+## What do we need to make them? PART II: qgis2web plugin for QGIS
+
+For the popups, we may not want all of the attributes with their default values to show when we hover over our features. We can change the field labels by writing in Aliases in the QGIS Attributes Form, or we can eliminate them by switching the “Widget Type” to “Hidden.” 
+
+![the Attributes Form in QGIS](web-mapping-201904-images/qgis-attributesform.png)
+
+In the example above, the alias for ZONE is written as “Zone” to get rid of the all-caps. If we wanted this field to not show in the pop-up at all, we would use the drop-down to change “Text Edit” to “Hidden.”
