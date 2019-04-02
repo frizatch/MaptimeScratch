@@ -33,6 +33,10 @@ To use Leaflet to build our webmap, we'll be working directly in text. You'll wa
 
 If you don't want to bother with setting up a local server, use Brackets! Its "Live Preview" functionality runs a local test server for you within your web browser. You'll see a new browser window pop up where you can see and test your application.
 
+**Directory Structure and Data**
+
+For today, pull the folder from the repo called *webmapping2019* and put it on your computer where you know where it is. This folder has our starter html code, the accompanying folder structure and some data in it that you can chose to use.
+
 
 **A Web Server**
 
@@ -41,6 +45,10 @@ A "server" is needed to gather the files and deliver them to the browser correct
 When we put together a web map, we test it on our own computer before serving it to the web, thus the need for a "local server." Here is a nice [gist](https://gist.github.com/jgravois/5e73b56fa7756fd00b89) for setting up a local server on your machine.
 
 OR, as mentioned, the [Brackets](http://brackets.io) text editor allows you to bypass this because it runs "Live Preview".
+
+**Web Developer Tools**
+
+Chrome is great because under "View" in the main menu, you can select "Developer" and you'll get windows that let you see the code behind the webpage you're looking at in an interactive way!
 
 
 ## Okay, let's make a map! But wait. What IS Leaflet?
@@ -96,7 +104,7 @@ The code in the index.html file in this repo is the same as the above with a few
 
 Now that you have a local server running, open the *index.html* file (or open this file from within Brackets using the Live Preview). See what happens! Change up your tiles and pick a map style you like.
 
-Keyboard shortcuts for commenting out code: There are different ways to quickly comment out lines of code or reinstate them. In Atom on a mac, use "command /" after highlighting your lines of interest.
+There are different keyboard shortcuts to quickly comment out lines of code or reinstate them! In Atom on a mac, for example, use "command /" after highlighting your lines of interest.
 
 **Adding our own data!**
 
@@ -162,7 +170,7 @@ Note: The data we're using was pulled from the city of Denver's open data [porta
 # What do we need to make them?
 # PART II: qgis2web plugin for QGIS
 
-For those of you new to QGIS, there is a strong developer community surrounding this open source software and great plugins are continually being created and improved.
+For those of you new to QGIS, there is a strong developer community surrounding this open source software and great plugins are continually being created and improved.  If you don't already have QGIS on your computer, you can download it at [qgis.org](https://www.qgis.org/en/site/)
 
 We'll be using two plugins:
 - QuickMapServices
@@ -182,7 +190,9 @@ The qgis2web plugin is a marvelous way of designing our maps in QGIS, then havin
 
 We've already added a basemap to our project, but let's make our map a little more interesting before we use qgis2web to export our map to the web. One great thing about interactive web maps is the possiblity of pop-ups that show the attribute information behind the features on our map.
 
-Add the data layer *parkingmeters.geojson* to your QGIS map. You should be able to merely drag it from your folder and drop it into the blank area below the OSM Standard basemap layer.
+Add the data layer *parkingmeters.geojson* to your QGIS map. You should be able to merely drag it from your folder and drop it into the blank area below the OSM Standard basemap layer. You'll then have a working space that looks something like this:
+
+![QGIS interface with parking meter data on a basemap](images/qgis-simplesymbolparkingmeters.png)
 
 **Examine your data!**
 
@@ -210,13 +220,28 @@ In the example above, the alias for ZONE is written as “Zone” to get rid of 
 
 **Introducing the qgis2web plugin!**
 
+Now that the map looks... well, good enough in this case ... we can now export it to a web map using qgis2web! Under "Web" in the main menu you'll find the qgis2web plugin option. Once you click on it, you'll have a new window that helps you put the final touches on how your map will behave (we're using a GUI to tell the plugin how to write the JavaScript!).
+
 *Layers and Groups*
 
-Choose which layers should be visible on your web map
+Choose which layers should be visible on your web map by checking/unchecking the layers. You'll also see all the fields/attributes that will be appearing in your pop-up.  In this version, not many of them were switched to "Hidden" in the Attributes Form in QGIS:  
+
+![Menu for Layers and Groups](images/qgis2web-exportsimplemeters.png)
+
+You also have options about how your pop-up labels will appear based on the aliases you added:
+
+![Example fields with pop-up labels inline](images/qgis2web-labels.png)
 
 *Appearance*
 
 Tune the visuals! Here, we've selected to highlight our feature when we hover over it:
+
+![Options for appearance](images/qgis2web-appearance.png)
+
+Now, in our mess of blue parking meters, we'll see a bright yellow one under our cursor so we can tell which feature's attributes will show when we click for the pop-up:
+
+![Highlighted parking meter](images/qgiswebmap-highlight.png)
+![Pop-up over parking meter](images/qgiswebmap-popup.png)
 
 *Leaflet vs. OpenLayers*
 
@@ -224,7 +249,9 @@ These are different libraries and treat the behavior of data differently.  Toggl
 
 *Export*
 
-Once you're happy with the way your map is set up, go to the export tab and pick a folder where qgis2web will write all the HTML, CSS and JavaScript needed for you to have a happy *index.html*
+Once you're happy with the way your map is set up, go to the export tab and pick a folder where qgis2web will write all the HTML, CSS and JavaScript needed for you to have a happy *index.html* file. Open that file and ...
+
+**Ta da!**
 
 The maintainer of qgis2web, Tom Chadwin, has further help for this plugin on his [wiki](https://github.com/tomchadwin/qgis2web/wiki)
 
