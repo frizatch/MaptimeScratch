@@ -2,7 +2,7 @@
 
 ## What is Tableau?
 
-![caption](imagesTableau/TableauLogo.jpg)
+![caption](imagesTableau/TableauLogo.jpeg)
 
 # quick maps
 
