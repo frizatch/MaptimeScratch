@@ -1,8 +1,10 @@
 # Tableau Public: Making quick data visualizations
 
+![caption](imagesTableau/TableauLogo.jpeg)
+
 ## What is Tableau?
 
-![caption](imagesTableau/TableauLogo.jpeg)
+
 
 # quick maps
 
