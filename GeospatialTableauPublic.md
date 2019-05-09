@@ -40,8 +40,15 @@ Enter in your email address you want associated with Tableau and click "Download
 * Text files
 * .JSON
 * Spatial files
-* Stat files
+* Statistical files
 * PDFs
-![](imagesTableau/OrdersSpreadsheetImport.jpg)
+
+We'll pick a provided example excel file from Tableau: Data_Viz_Tableau_Public_Superstore_Data
+
+Drag the "Orders" sheet to the space where it says to and we'll be off and running!
+
+![](imagesTableau/OrdersSpreadsheetImport.png)
 
 **Measures & Dimensions and all sorts of thing**
+
+Examples and discussion...
