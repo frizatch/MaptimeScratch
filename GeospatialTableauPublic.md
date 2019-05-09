@@ -49,6 +49,12 @@ Drag the "Orders" sheet to the space where it says to and we'll be off and runni
 
 ![](imagesTableau/OrdersSpreadsheetImport.png)
 
-**Measures & Dimensions and all sorts of things**
+  Red: Toggle between data view and metadata view
 
-Examples and discussion...
+  Blue: Discrete String and Geometry symbols from autoclassification
+
+  Green: Continuous Numerical symbol from autoclassification
+
+## Measures & Dimensions and all sorts of things
+
+Examples and discussion!
