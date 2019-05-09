@@ -22,7 +22,7 @@ Tableau Public is free, but data is openly saved on the web. Free academic licen
 
 * [Tableau Public download](https://public.tableau.com/en-us/)
 
-Enter in your email address you want associated with Tableau and click "Download the App." The version for 32-bit Windows will automatically start downloading. Cancel and pick a different file if you want 64-bit or the Mac version.
+Enter your email address you want associated with Tableau and click "Download the App." The version for 32-bit Windows will automatically start downloading. Cancel and pick a different file if you want 64-bit or the Mac version.
 
 **Getting Started**
 
@@ -49,6 +49,6 @@ Drag the "Orders" sheet to the space where it says to and we'll be off and runni
 
 ![](imagesTableau/OrdersSpreadsheetImport.png)
 
-**Measures & Dimensions and all sorts of thing**
+**Measures & Dimensions and all sorts of things**
 
 Examples and discussion...
