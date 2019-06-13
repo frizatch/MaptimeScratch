@@ -19,12 +19,10 @@ We're going to build a map of a tour of National Parks in the Western U.S.!
 ## Getting Started
 You should already have installed:
 * QGIS (3.4)
-* Inkscape (0.92.3)
+* Inkscape (0.92.2)
 
 ## Data
-Data to use in this workshop is in the [Data Folder](https://github.com/MicheleTobias/OpenSourceCartography/tree/master/Data)
-
-Other potential data sources for your maps: [Michele's List of Data Sources](https://docs.google.com/spreadsheets/d/1964wpzdUZJElZ7xsF740BMiLcTtga82jEOnkHF7wyHU/edit?usp=sharing)
+Data to use in this workshop is in the [Data Folder](https://github.com/AL-RSS/MaptimeTutorials/tree/master/Inkscape2019-master)
 
 ## Intro to Inkscape
 ### Inkscape is a vector graphics progam ... you know, vector data!
@@ -35,7 +33,7 @@ Other potential data sources for your maps: [Michele's List of Data Sources](htt
        1. Layers
        1. Fill & Stroke = Symbology
        
-### Make Your Own Pin Icon in Inkscape
+### Make Your Own Tree Icon in Inkscape
 Let's learn to use Inkscape while making something we can use later: an icon to represent a point.  I'll walk you through how to make a map pin icon, but feel free to make your own version!  *Something to remember: SAVE OFTEN! Just like GIS, vector illustration programs can be a little unstable. Save every time you think you might want to.*
 
 Open Inkscape.  Let's learn a little about the interface.
@@ -45,7 +43,7 @@ There are a lot of toolbars.  Here are some tools you might need:
 ![Toolbars Cheatsheet](/Images/Toolbars.png)
 Use these images as a guide to help you find the tools we're using.
 
-Draw a circle in the middle of your canvas using the Cirlce & Elipse tool: click on the ![Circle Tool](/Images/Tool_Circle.PNG) icon, then move your mouse onto the canvas.  Hold down Ctrl while drawing your circle to make a perfect circle (instead of an elipse which is longer in one dimension).  Save.
+For our tree top, we'll draw a triangle with the Bezier curves and straight line tool ![Bezier Tool](Images/Tool_Bezier.PNG) icon. If you prefer a round/deciduous tree, draw a circle in the middle of your canvas using the Cirlce & Elipse tool: click on the ![Circle Tool](/Images/Tool_Circle.PNG) icon. Hold down Ctrl while drawing your circle to make a perfect circle (instead of an elipse which is longer in one dimension).  Save.
 
 ![Draw a Circle](/Images/Pin_1_Circle.png)
 
