@@ -1,19 +1,47 @@
-# Geologic Maps: Using QGIS after a brief intro to rocks
+# Geologic Maps: Intro to rocks and QGIS
 
-## Outline
+![Detail of Eldorado Springs Geologic Quadrangle, Wells, 1961](images/NCARGeologyScreenshot.JPG)
 
-![Detail of Eldorado Springs Quadrangle, geology by Wells, 1961](images/NCARGeologyScreenshot.jpg)
+## What this tutorial will cover:
 
-Web maps, or slippy maps, are based on tiles that load on demand so you limit the data you use to the data you need to see. For more orientation to how they are structured (zoom levels and distibutions) visit this [wikipage](https://wiki.openstreetmap.org/wiki/Slippy_map_tilenames)
+Introduction to the rock cycle and main rock types
+- sedimentary
+- igneous
+- metamorphic
 
-# What do we need to make them?
-# PART I: Leaflet
+Orientation to some geologic terms and structures
+- strike
+- dip
+- fault (normal, thrust, strike/slip)
 
-- A Web Browser
-- A Text Editor
-- Directories, Files, Data and Media
-- Web Server
-- Web Developer Tools
+How to find the above geologic things on a map
+
+Quick look into how you can create and edit geologic maps in QGIS
+
+## What this tutorial won't do:
+
+This tutorial won't make you a structural geologist qualified to make geologic maps from scratch. Real geologic maps are based on mind-boggling amounts of scientific training and field work. For more information see this [USGS description](https://www.usgs.gov/core-science-systems/national-cooperative-geologic-mapping-program/science/introduction-geologic?qt-science_center_objects=0#qt-science_center_objects)
+
+# GEOLOGY!
+# PART I: Rocks
+
+*The Rock Cycle*
+
+The surface of the earth is a dynamic system and this applies to rocks as well! The time scale is on a longer extent than what we can see in the motion of water, for example. It's harder for our brains to grasp, but rocks do move.
+
+The simplistic summary of the rock cycle is: 
+- Molten material cools into solid rocks as it comes to or near to the earth's surface creating igneous rocks.
+- Erosion wears existing rocks into sediment or dissolved chemicals that generally get carried from higher elevations and deposited into flat layers at lower elevations.
+- These layers get buried and compressed and turned into sedimentary rocks. If they get exposed to an environment with enough heat and pressure to start changing the mineral sturcture, they become metamorphic rocks or melt completely again.
+
+![Granite](images/Granite_softgreen.jpg)
+[CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/0]
+
+![Sandstone](images/Valley_of_Fire_Sandstone.jpg)
+Hasmodius [CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0)]
+
+![Gneiss](images/400-orion-blaa.png)
+Orion Blue from Norway [CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/0]
 
 ## Set up
 
@@ -169,8 +197,7 @@ Copy and paste these new sections into your *index.html* file. If you're using y
 
 Note: The data we're using was pulled from the city of Denver's open data [portal](https://www.denvergov.org/opendata/) as shapefiles and then converted to GeoJSON files using QGIS.
 
-# What do we need to make them?
-# PART II: qgis2web plugin for QGIS
+# PART II: Structures
 
 For those of you new to QGIS, there is a strong developer community surrounding this open source software and great plugins are continually being created and improved.  If you don't already have QGIS on your computer, you can download it at [qgis.org](https://www.qgis.org/en/site/)
 
