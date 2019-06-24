@@ -1,18 +1,21 @@
 # Geologic Maps: Intro to rocks and QGIS
 
-![Detail of Eldorado Springs Geologic Quadrangle, Wells, 1961](images/NCARGeologyScreenshot.JPG)
+![DetailWellsGeologicMap](images/NCARGeologyScreenshot.JPG)
+*Detail of Eldorado Springs Geologic Quadrangle, Wells, 1961*
 
 ## What this tutorial will cover:
 
-Introduction to the rock cycle and main rock types
+Introduction to the rock cycle and main rock types:
 - sedimentary
 - igneous
 - metamorphic
 
+Quick look at the Geologic Time Scale
+
 Orientation to some geologic terms and structures
 - strike
 - dip
-- fault (normal, thrust, strike/slip)
+- fault (normal, thrust or reverse, strike/slip)
 
 How to find the above geologic things on a map
 
@@ -35,6 +38,7 @@ The simplistic summary of the rock cycle is:
 - These layers get buried and compressed and turned into sedimentary rocks. If they get exposed to an environment with enough heat and pressure to start changing the mineral sturcture, they become metamorphic rocks or melt completely again.
 
 ![Granite](images/Granite_softgreen.jpg)
+*Granite*
 [CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/0]
 
 ![Sandstone](images/Valley_of_Fire_Sandstone.jpg)
