@@ -37,6 +37,10 @@ The simplistic summary of the rock cycle is:
 - Erosion wears existing rocks into sediment or dissolved chemicals that generally get carried from higher elevations and deposited into flat layers at lower elevations.
 - These layers get buried and compressed and turned into sedimentary rocks. If they get exposed to an environment with enough heat and pressure to start changing the mineral sturcture, they become metamorphic rocks or melt completely again.
 
+There are many different subsets of rock types under the three main just mentioned (igneous, sedimentary and metamporphic). The difference between them depends on chemical compositions and mineral sizes, both factors being dependent on the environment in which the rock was formed. See this [page](https://geology.utah.gov/map-pub/survey-notes/glad-you-asked/igneous-sedimentary-metamorphic-rocks/) for more details.
+
+Here are some classic examples of the three main rock types:
+
 
 GRANITE (an igneous rock type):
 
@@ -119,20 +123,21 @@ Babble about tracing/editing, but don't actively do it... provide file with one 
 draw one field data point
 change symbols: add lithology swatch, change to svg strike/dip symbol)
 
-For those of you new to QGIS, there is a strong developer community surrounding this open source software and great plugins are continually being created and improved.  If you don't already have QGIS on your computer, you can download it at [qgis.org](https://www.qgis.org/en/site/)
-
+For those of you new to QGIS, there is a strong developer community surrounding this open source software. If you don't already have QGIS on your computer, you can download it at [qgis.org](https://www.qgis.org/en/site/). New great plugins are continually being created and improved and those can be added as well from the "Plugins" tab, but we aren't using any in this tutorial.
 
 ### Import a georeferenced geologic map
 
-Let's say we have this old geologic map, but we want to create a digital version of it so easily add our adjustments with more accurate field data.
+Let's say we have this old geologic map, but we want to create a digital version of it so we can easily add our adjustments with more accurate field data.
 
-*Trace lithologies and symbolize*
+### Trace lithologies and symbolize
+
+For your convenience, I've traced the  blah blah blah and have supplied these polygons for you
+
+We'll dip into editing in the next section.
 
 
 
-
-
-## Add a symbol to our map to indicate new field data
+### Add new field data
 
 *Add point*
 
@@ -150,4 +155,4 @@ In order to use one of the Geologic symbols from our library, we need to switch 
 
 
 
-**Have fun with these different methods of creating web maps!**
+**Enjoy your new geologic knowledge and how to show it off on a map!**
