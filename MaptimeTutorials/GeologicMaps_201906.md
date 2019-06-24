@@ -78,22 +78,32 @@ Strike = When the bed tilts, it does so around an axis. The direction that axis 
 
 *Diagram by GeologyWolf
 
-Synclines = 
+Synclines = a downward fold in sedimentary beds
 
-Anticlines = 
+Anticlines = an upward fold in sedimentary beds
 
 ![SynclineAnticline](images/SynclineAnticline.png)
 
 *Diagram by Pearson Scott Foresman*
 
+Imagine slicing off the top of these folds (eroding them away) and what that may look like exposed on the earth's surface.
 
-Faults = fractures through rocks showing a significant discontinuity in the volume of rock most often caused by plate tectonic forces
+
+Faults = fractures through rocks showing a significant discontinuity in the volume of rock
 
 ![FaultTypes](images/ThreeFaults_GeologyPage.png)
 
 *Diagram from www.GeologyPage.com*
 
-These forces also work on igneous and metamporhic rocks, but they are easist to understand while using sedimentary rocks as examples.
+Plate tectonic forces also work on igneous and metamporhic rocks, but they are easist to understand while using sedimentary rocks as examples.
+
+*Representing structures on a map*
+
+The black lines and symbols you see scattered on geologic maps are a short-hand for describing the structures mentioned above. See this guide for examples:
+
+There is also an amazing source of many of the point symbols used in geologic maps made available by ________ and included in the data folder in this tutorial.
+
+The blobs of color with differnt etch patterns show the surface exposures of different kinds of rocks, often with their ages wrt the Geologic Time Scale. Refer to the individual legends of each geologic map for more information.
 
 
 ## Part III: QGIS mapping
@@ -104,44 +114,29 @@ changing symbols
 
 For those of you new to QGIS, there is a strong developer community surrounding this open source software and great plugins are continually being created and improved.  If you don't already have QGIS on your computer, you can download it at [qgis.org](https://www.qgis.org/en/site/)
 
-We'll be using two plugins:  (keep this? - check out geology plugins)
-- QuickMapServices
 
-To add them to your QGIS, go to the "Plugins" tab on the main menu and select "Manage and Install Plugins..."
-
-A window will open that has many plugin options listed alphabetically. Go to the Q's and install the two mentioned above. Your window should look something like this when they've been added:
-
-![Q.G.I.S. plugins](images/qgis-plugins.png)
-
-The QuickMapServices plugin is a way of quickly adding in basemaps to your project. XYZ tiles is richer way to add basemaps, but we'll stick with adding in the standard OSM basemap for now: from the main menu bar go to Web -> QuickMapServices -> OSM -> OSM Standard.
-
-## Import a georeferenced geologic map
+### Import a georeferenced geologic map
 
 Let's say we have this old geologic map, but we want to create a digital version of it so easily add our adjustments with more accurate field data.
 
+*Trace lithologies and symbolize*
 
 
-## Create a simple map in QGIS
 
-We've already added a basemap to our project, but let's make our map a little more interesting before we use qgis2web to export our map to the web. One great thing about interactive web maps is the possiblity of pop-ups that show the attribute information behind the features on our map.
 
-Add the data layer *parkingmeters.geojson* to your QGIS map. You should be able to merely drag it from your folder and drop it into the blank area below the OSM Standard basemap layer. You'll then have a working space that looks something like this:
 
-![QGIS interface with parking meter data on a basemap](images/qgis-simplesymbolparkingmeters.png)
+## Add a symbol to our map to indicate new field data
 
-**Examine your data!**
-
-Once the parkingmeters layer appears in your QGIS contents, right click on the layer and select "Open Attribute Table". Here, you can examine the fields and try to figure out all the information that has been recorded about these spatial features. Of course, if the information is opaque, there should be metadata on the Denver Open data site that explains it better!
-
-**Symbolize your data**
-
-*Simple Symbol*
-
-Right click on the layer again, but this time select "Properties". This will open up a new window with a number of menu options. Pick "Symbology". Keep the default Simple Symbol option for exploring pop-ups, but play with the color and marker options.
+*Add point*
 
 *SVG Symbol*
 
-In order to use one of the Geologic symbols from our library, we need to switch our symbology to an SVG symbol and pick one from our library.
+Right click on the layer and select "Properties". This will open up a new window with a number of menu options. Pick "Symbology".
+
+In order to use one of the Geologic symbols from our library, we need to switch our symbology from the default simple symbol to an SVG symbol and pick one from our library.
+
+
+
 
 
 
