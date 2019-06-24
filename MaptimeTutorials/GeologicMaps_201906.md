@@ -26,7 +26,7 @@ Quick look into how you can create and edit geologic maps in QGIS
 This tutorial won't make you a structural geologist qualified to make geologic maps from scratch. Real geologic maps are based on mind-boggling amounts of scientific training and field work. For more information see this [USGS description](https://www.usgs.gov/core-science-systems/national-cooperative-geologic-mapping-program/science/introduction-geologic?qt-science_center_objects=0#qt-science_center_objects)
 
 # GEOLOGY!
-# Part I: Rocks
+# Part I: Rocks & Time
 
 *The Rock Cycle*
 
@@ -49,11 +49,34 @@ The simplistic summary of the rock cycle is:
 
 *https://commons.wikimedia.org/wiki/File:Migma_ss_2006.jpg*
 
+*Geologic Time"
+
+![GeologicTimeScale](images/Geologic_time_scale.jpg)
+
 
 
 
 
 # Part II: Structures
+
+When sedimetary layers are deposited, they are put down in flat layers. After the layers are changed into rock, all sorts of forces can then act on them to change the orientation of these sedimentary rocks. Some of the more simplistic structures are:
+
+Synclines = 
+Anticlines = 
+
+![SynclineAnticline](images/SynclineAnticline.png)
+
+*Diagram by Pearson Scott Foresman*
+
+
+Faults = fractures through rocks showing a significant discontinuity in the volume of rock most often caused by plate tectonic forces
+
+![FaultTypes](images/ThreeFaults_GeologyPage.png)
+
+*Diagram from www.GeologyPage.com*
+
+These forces also work on igneous and metamporhic rocks, but they are easist to understand while using sedimentary rocks as examples.
+
 
 # Part III: QGIS mapping
 
