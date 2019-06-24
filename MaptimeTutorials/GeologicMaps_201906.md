@@ -37,7 +37,7 @@ The simplistic summary of the rock cycle is:
 - Erosion wears existing rocks into sediment or dissolved chemicals that generally get carried from higher elevations and deposited into flat layers at lower elevations.
 - These layers get buried and compressed and turned into sedimentary rocks. If they get exposed to an environment with enough heat and pressure to start changing the mineral sturcture, they become metamorphic rocks or melt completely again.
 
-![Granite](images/FjaereGranite.jpg)
+![Granite](images/FjaereGranite.jpeg)
 
 *By I, Friman, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=2421115*
 
