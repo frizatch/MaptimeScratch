@@ -13,13 +13,13 @@ Introduction to the rock cycle and main rock types:
 Quick look at the Geologic Time Scale
 
 Orientation to some geologic terms and structures
-- strike
-- dip
-- fault (normal, thrust or reverse, strike/slip)
+- strike and dip
+- antclines, synclines and monoclines
+- faults (normal, thrust or reverse, strike/slip)
 
 How to find the above geologic things on a map
 
-Quick look into how you can create and edit geologic maps in QGIS
+An intro into how you can create and edit geologic maps in QGIS
 
 ## What this tutorial won't do:
 
