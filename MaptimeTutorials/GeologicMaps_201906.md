@@ -37,11 +37,13 @@ The simplistic summary of the rock cycle is:
 - Erosion wears existing rocks into sediment or dissolved chemicals that generally get carried from higher elevations and deposited into flat layers at lower elevations.
 - These layers get buried and compressed and turned into sedimentary rocks. If they get exposed to an environment with enough heat and pressure to start changing the mineral sturcture, they become metamorphic rocks or melt completely again.
 
+
 GRANITE (an igneous rock type):
 
 ![Granite](images/FjaereGranite.jpeg)
 
 *By I, Friman, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=2421115*
+
 
 
 SANDSTONE (a sedimentary rock type):
@@ -50,13 +52,17 @@ SANDSTONE (a sedimentary rock type):
 
 *By Hasmodius, CC BY-SA 4.0 https://commons.wikimedia.org/wiki/File:Valley_of_Fire_Sandstone_layers_exposed_by_erosion.jpg*
 
+
+
 MIGMATITE (a metamporhic rock type):
 
 ![Migmatite](images/Migmatite.jpg)
 
 *https://commons.wikimedia.org/wiki/File:Migma_ss_2006.jpg*
 
-*Geologic Time*
+
+
+### Geologic Time
 
 The rock cycle happens over times that we have a hard time imagining. For reference, see the figure below that diagrams out geologic time. Note: Ma stands for "millions of years ago."
 
@@ -70,17 +76,17 @@ The rock cycle happens over times that we have a hard time imagining. For refere
 
 When sedimetary layers are deposited, they are put down in flat layers. After the layers are changed into rock, all sorts of forces can then act on them to deform the orientation of these sedimentary rocks. Some of the more simplistic terms and structures are:
 
-Dip = When a sedimentary bed is tilted, dip describes how many degrees it has shifted from horizontal in a particular location
+- Dip = When a sedimentary bed is tilted, dip describes how many degrees it has shifted from horizontal in a particular location
 
-Strike = When the bed tilts, it does so around an axis. The direction that axis points is the strike of that bed.
+- Strike = When the bed tilts, it does so around an axis. The direction that axis points is the strike of that bed.
 
 ![StrikeDip](images/StrikeDip.png)
 
 *Diagram by GeologyWolf
 
-Synclines = a downward fold in sedimentary beds
+- Synclines = a downward fold in sedimentary beds
 
-Anticlines = an upward fold in sedimentary beds
+- Anticlines = an upward fold in sedimentary beds
 
 ![SynclineAnticline](images/SynclineAnticline.png)
 
@@ -89,17 +95,17 @@ Anticlines = an upward fold in sedimentary beds
 Imagine slicing off the top of these folds (eroding them away) and what that may look like exposed on the earth's surface.
 
 
-Faults = fractures through rocks showing a significant discontinuity in the volume of rock
+- Faults = fractures through rocks showing a significant discontinuity in the volume of rock
 
 ![FaultTypes](images/ThreeFaults_GeologyPage.png)
 
 *Diagram from www.GeologyPage.com*
 
-Plate tectonic forces also work on igneous and metamporhic rocks, but they are easist to understand while using sedimentary rocks as examples.
+Plate tectonic forces also work on igneous and metamporhic rocks, but their effects are most obvious on sedimentary rocks.
 
-*Representing structures on a map*
+### Representing structures on a map
 
-The black lines and symbols you see scattered on geologic maps are a short-hand for describing the structures mentioned above. See this guide for examples:
+The black lines and symbols you see scattered on geologic maps are a short-hand for describing the structures mentioned above. See this [guide](https://commons.wvc.edu/rdawes/G101OCL/Basics/BscsTables/geomapsymb.html#sdtable) for examples.
 
 There is also an amazing source of many of the point symbols used in geologic maps made available by ________ and included in the data folder in this tutorial.
 
@@ -108,9 +114,10 @@ The blobs of color with differnt etch patterns show the surface exposures of dif
 
 ## Part III: QGIS mapping
 
-pull in GeoTIFF
-Babble about tracing/editing, but don't actively do it... load file with one or two polygons for lithologies
-changing symbols
+(pull in GeoTIFF
+Babble about tracing/editing, but don't actively do it... provide file with one or two polygons for lithologies
+draw one field data point
+change symbols: add lithology swatch, change to svg strike/dip symbol)
 
 For those of you new to QGIS, there is a strong developer community surrounding this open source software and great plugins are continually being created and improved.  If you don't already have QGIS on your computer, you can download it at [qgis.org](https://www.qgis.org/en/site/)
 
