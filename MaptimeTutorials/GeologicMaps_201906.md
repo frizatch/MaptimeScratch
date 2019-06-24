@@ -6,8 +6,8 @@
 ## What this tutorial will cover:
 
 Introduction to the rock cycle and main rock types:
-- sedimentary
 - igneous
+- sedimentary
 - metamorphic
 
 Quick look at the Geologic Time Scale
@@ -26,30 +26,39 @@ Quick look into how you can create and edit geologic maps in QGIS
 This tutorial won't make you a structural geologist qualified to make geologic maps from scratch. Real geologic maps are based on mind-boggling amounts of scientific training and field work. For more information see this [USGS description](https://www.usgs.gov/core-science-systems/national-cooperative-geologic-mapping-program/science/introduction-geologic?qt-science_center_objects=0#qt-science_center_objects)
 
 # GEOLOGY!
-# Part I: Rocks & Time
+## Part I: Rocks & Time
 
 *The Rock Cycle*
 
 The surface of the earth is a dynamic system and this applies to rocks as well! The time scale is on a longer extent than what we can see in the motion of water, for example. It's harder for our brains to grasp, but rocks do move.
 
 The simplistic summary of the rock cycle is: 
-- Molten material cools into solid rocks as it comes to or near to the earth's surface creating igneous rocks.
+- Molten material from levels below the earth's crust cools into solid rocks as it comes to or near to the earth's surface creating igneous rocks.
 - Erosion wears existing rocks into sediment or dissolved chemicals that generally get carried from higher elevations and deposited into flat layers at lower elevations.
 - These layers get buried and compressed and turned into sedimentary rocks. If they get exposed to an environment with enough heat and pressure to start changing the mineral sturcture, they become metamorphic rocks or melt completely again.
+
+GRANITE (an igneous rock type):
 
 ![Granite](images/FjaereGranite.jpeg)
 
 *By I, Friman, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=2421115*
 
+
+SANDSTONE (a sedimentary rock type):
+
 ![Sandstone](images/Valley_of_Fire_Sandstone.jpg)
 
 *By Hasmodius, CC BY-SA 4.0 https://commons.wikimedia.org/wiki/File:Valley_of_Fire_Sandstone_layers_exposed_by_erosion.jpg*
+
+MIGMATITE (a metamporhic rock type):
 
 ![Migmatite](images/Migmatite.jpg)
 
 *https://commons.wikimedia.org/wiki/File:Migma_ss_2006.jpg*
 
-*Geologic Time"
+*Geologic Time*
+
+The rock cycle happens over times that we have a hard time imagining. For reference, see the figure below that diagrams out geologic time. Note: Ma stands for "millions of years ago."
 
 ![GeologicTimeScale](images/Geologic_time_scale.jpg)
 
@@ -57,11 +66,20 @@ The simplistic summary of the rock cycle is:
 
 
 
-# Part II: Structures
+## Part II: Structures
 
-When sedimetary layers are deposited, they are put down in flat layers. After the layers are changed into rock, all sorts of forces can then act on them to change the orientation of these sedimentary rocks. Some of the more simplistic structures are:
+When sedimetary layers are deposited, they are put down in flat layers. After the layers are changed into rock, all sorts of forces can then act on them to deform the orientation of these sedimentary rocks. Some of the more simplistic terms and structures are:
+
+Dip = When a sedimentary bed is tilted, dip describes how many degrees it has shifted from horizontal in a particular location
+
+Strike = When the bed tilts, it does so around an axis. The direction that axis points is the strike of that bed.
+
+![StrikeDip](images/StrikeDip.png)
+
+*Diagram by GeologyWolf
 
 Synclines = 
+
 Anticlines = 
 
 ![SynclineAnticline](images/SynclineAnticline.png)
@@ -78,7 +96,7 @@ Faults = fractures through rocks showing a significant discontinuity in the volu
 These forces also work on igneous and metamporhic rocks, but they are easist to understand while using sedimentary rocks as examples.
 
 
-# Part III: QGIS mapping
+## Part III: QGIS mapping
 
 pull in GeoTIFF
 Babble about tracing/editing, but don't actively do it... load file with one or two polygons for lithologies
