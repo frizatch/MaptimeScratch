@@ -152,10 +152,12 @@ When you create the layer, you will create the fields you need. For having our s
 
 ![FieldCreationGUI](images/FieldsForSDPoints.png)
 
+After you enter information for your field, don't forget to click on the Add field button... in the above image, that hasn't been done yet for the strike rotation field.
+
 
 *Add point*
 
-Now that we have a layer to which we can write, we need to toggle on its editing capability. Select the layer so it's highlighted in blue, then click the Toggle Editing button: ![EditButton](images/EditButton.png) Now a number of other functions are no longer greyed out and we can add a point.
+Now that we have a layer to which we can write, we need to toggle on its editing capability. Select the layer so it's highlighted in blue, then click the Toggle Editing button: ![EditButton](images/EditingButton.png) Now a number of other functions are no longer greyed out and we can add a point.
 
 Click the Add Point button ![CreatePointButton](images/CreatePointButton.png) and then, when your cursor looks like a target, click on the Kd Formation somewhere near the middle. You'll be prompted to fill in the values of your fields.
 
@@ -165,21 +167,37 @@ Your map should look something like this:
 
 ![DakotaPlainPoint](images/Dakota_PlainPoint.png)
 
-But that's just a dot and we want to add some information about our strike and dip data with a geologic symbol. This is where Dr. Langford's work in Inkscape to create .svg files for us from the USGS style book and our entered data comes in handy. We'll be using the file 6.02_bdg_incld.svg
 
 *SVG Symbol*
 
-Right click on the layer and select "Properties". This will open up a new window with a number of menu options. Pick "Symbology".
+But that's just a dot and we want to add some information about our strike and dip data with a geologic symbol. This is where Dr. Langford's work in Inkscape to create .svg files for us from the USGS style book and our entered data comes in handy. We'll be using the file 6.02_bdg_incld.svg
 
-In order to use one of the Geologic symbols from our library, we need to switch our symbology from the default simple symbol to an SVG symbol and pick one from our library.
-
+Right click on the layer and select "Properties". This will open up a new window with a number of menu options. Pick "Symbology" on the left side. In order to use one of the Geologic symbols from our library, we need to switch our symbology from the default simple symbol to an SVG symbol and pick one from our library.
 
 
 ![SVGMarkerAdjust](images/SVGMarkerGUI.png)
 
+Then scroll down (this is kind of hidden) and use the three dots to find our file:
+
+![SVGFileFind](images/SVGFileGUI.png)
+
+After doing this and adjusting the sizes and turning on the label to the dip degrees, our map will now look like this:
+
+![Dakota_StrikeDip](images/Dakota_StrikeDipLabel.png)
+
 ### Trace lithologies and symbolize
 
-For your convenience, I've traced one bit of the Rocky Flats Alluvium and one bit of the Dakota Group for you. You can find them in the file EldoradoQuadLithologies.zip.
+To have the map fully digitized, we need to trace the colorful blobs we see on the georeferenced map. You go through the same process of creating a layer, but polygon this time, and use the Add Polygon button ![AddPolygon](images/AddPolygonButton) for creating the tracings. For your convenience, I've traced one bit of the Rocky Flats Alluvium and one bit of the Dakota Group for you. You can find them in the file EldoradoQuadLithologies.zip.
+
+To make the fills of these polygons resemble some standard lithology patterns, we can use pre-made swatches that are in the data folder. Use categorized symbols to have the swatches be distinct to the formations.
+
+![LithologySwatches](images/CategorizedLithologies)
+
+You end up with something where the swatches represent the types of rocks... kinda.
+
+![FinalMap](images/TwoLithologiesOnMap)
+
+
 
 
 **Enjoy your new geologic knowledge and how to show it off on a map!**
