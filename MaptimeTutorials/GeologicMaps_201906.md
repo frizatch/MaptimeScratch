@@ -122,12 +122,23 @@ For those of you new to QGIS, there is a strong developer community surrounding 
 
 ### Import a georeferenced geologic map
 
-Let's say we have this old geologic map, but we want to create a digital version of it so we can easily add our adjustments with more accurate field data.
+Let's say we have this old geologic map, but we want to create a digital version of it so we can easily add our adjustments with more accurate field data. Luckily for you, we have a map that is already geo-referenced based on the original projection of the map (NAD27 UTM Z13 ... and yes, this map was made in 1967!). In the data folder, you'll see the preliminary map (USGS_I-383) as well as the final product (USGS_B-1221-D).
 
+To add a GeoTIFF, go to the add data button ![AddData](images/AddData.png), select raster and, using the three-dot button, navigate to the file you want... the one ending with .tif only!
 
+![LoadRaster](images/LoadRasterMap.png)
 
+The projection of your project will be automatically selected based on this georeference map. Your workspace should look approximately like this:
+
+![LoadedMap](images/LoadedMap.png)
 
 ### Add new field data
+
+On this map, we can see a number of places where we see strike/dip symbols with numbers by them. Remember, these are showing how steeply the beds tilt, and in which direction they are tilting. We're going to pretend we went out into the field and collected some more information like this with our Brunton compasses. Of course, we would have the location data from our field notebook and would import the data that way, but for this tutorial we're going to fake it and draw approximate locations.
+
+Zoom into the map using the zoom button ![ZoomButton](images/ZoomButton) to the approximate area shown in the red rectangle:
+
+![ZoomArea](images/MapZoomArea.png)
 
 ![CreateNewLayer](images/CreateNewLayer.png)
 
@@ -146,20 +157,13 @@ Right click on the layer and select "Properties". This will open up a new window
 
 In order to use one of the Geologic symbols from our library, we need to switch our symbology from the default simple symbol to an SVG symbol and pick one from our library.
 
-### Trace lithologies and symbolize
-
-For your convenience, I've traced the  blah blah blah and have supplied these polygons for you
-
-We'll dip into editing in the next section.
-
-
-
-![SVGFilePIck](images/SVGFileGUI.png)
-
 
 
 ![SVGMarkerAdjust](images/SVGMarkerGUI.png)
 
+### Trace lithologies and symbolize
+
+For your convenience, I've traced one bit of the Rocky Flats Alluvium and one bit of the Dakota Group for you. You can find them in the file EldoradoQuadLithologies.zip.
 
 
 **Enjoy your new geologic knowledge and how to show it off on a map!**
