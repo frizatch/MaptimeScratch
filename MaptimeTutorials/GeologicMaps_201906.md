@@ -86,7 +86,7 @@ When sedimetary layers are deposited, they are put down in flat layers. After th
 
 ![StrikeDip](images/StrikeDip.png)
 
-*Diagram by GeologyWolf
+*Diagram by GeologyWolf*
 
 - Synclines = a downward fold in sedimentary beds
 
@@ -118,16 +118,33 @@ The blobs of color with differnt etch patterns show the surface exposures of dif
 
 ## Part III: QGIS mapping
 
-(pull in GeoTIFF
-Babble about tracing/editing, but don't actively do it... provide file with one or two polygons for lithologies
-draw one field data point
-change symbols: add lithology swatch, change to svg strike/dip symbol)
-
 For those of you new to QGIS, there is a strong developer community surrounding this open source software. If you don't already have QGIS on your computer, you can download it at [qgis.org](https://www.qgis.org/en/site/). New great plugins are continually being created and improved and those can be added as well from the "Plugins" tab, but we aren't using any in this tutorial.
 
 ### Import a georeferenced geologic map
 
 Let's say we have this old geologic map, but we want to create a digital version of it so we can easily add our adjustments with more accurate field data.
+
+
+
+
+### Add new field data
+
+![CreateNewLayer](images/CreateNewLayer.png)
+
+
+*Add point*
+
+![EditButton](images/EditButton.png)
+
+![CreatePointButton](images/CreatePointButton.png)
+
+![DakotaPlainPoint](images/Dakota_PlainPoint.png)
+
+*SVG Symbol*
+
+Right click on the layer and select "Properties". This will open up a new window with a number of menu options. Pick "Symbology".
+
+In order to use one of the Geologic symbols from our library, we need to switch our symbology from the default simple symbol to an SVG symbol and pick one from our library.
 
 ### Trace lithologies and symbolize
 
@@ -137,21 +154,11 @@ We'll dip into editing in the next section.
 
 
 
-### Add new field data
-
-*Add point*
-
-*SVG Symbol*
-
-Right click on the layer and select "Properties". This will open up a new window with a number of menu options. Pick "Symbology".
-
-In order to use one of the Geologic symbols from our library, we need to switch our symbology from the default simple symbol to an SVG symbol and pick one from our library.
+![SVGFilePIck](images/SVGFileGUI.png)
 
 
 
-
-
-
+![SVGMarkerAdjust](images/SVGMarkerGUI.png)
 
 
 
