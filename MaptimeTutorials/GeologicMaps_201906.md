@@ -115,7 +115,7 @@ The black lines and symbols you see scattered on geologic maps are a short-hand 
 
 There is also an amazing source of .svg files of the point symbols used in geologic maps created by Dr. Richard Langford, a geologic consultant living in Tasmania.  Some of these symbols are included in the data folder in this tutorial.
 
-The blobs of color with differnt etch patterns show the surface exposures of different kinds of rocks, often with their ages wrt the Geologic Time Scale. Refer to the individual legends of each geologic map for more information.
+The blobs of color with different etch patterns show the surface exposures of different kinds of rocks, often with their ages wrt the Geologic Time Scale. Refer to the individual legends of each geologic map for more information.
 
 
 ## Part III: QGIS mapping
