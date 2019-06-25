@@ -111,7 +111,7 @@ Plate tectonic forces also work on igneous and metamporhic rocks, but their effe
 
 The black lines and symbols you see scattered on geologic maps are a short-hand for describing the structures mentioned above. See this [guide](https://commons.wvc.edu/rdawes/G101OCL/Basics/BscsTables/geomapsymb.html#sdtable) for examples.
 
-There is also an amazing source of .svg files of the point symbols used in geologic maps created by Dr. Richard Langford, a geologic consultant living in Tasmania.  These symbols are included in the data folder in this tutorial.
+There is also an amazing source of .svg files of the point symbols used in geologic maps created by Dr. Richard Langford, a geologic consultant living in Tasmania.  Some of these symbols are included in the data folder in this tutorial.
 
 The blobs of color with differnt etch patterns show the surface exposures of different kinds of rocks, often with their ages wrt the Geologic Time Scale. Refer to the individual legends of each geologic map for more information.
 
@@ -134,22 +134,29 @@ The projection of your project will be automatically selected based on this geor
 
 ### Add new field data
 
-On this map, we can see a number of places where we see strike/dip symbols with numbers by them. Remember, these are showing how steeply the beds tilt, and in which direction they are tilting. We're going to pretend we went out into the field and collected some more information like this with our Brunton compasses. Of course, we would have the location data from our field notebook and would import the data that way, but for this tutorial we're going to fake it and draw approximate locations.
+On this map, we can see a number of places where we see strike/dip symbols with numbers by them. Remember, these are showing how steeply the beds tilt, and in which direction they are tilting. We're going to pretend we went out into the field and collected some more information like this with our Brunton compass. Of course, we would have the location data from our field notebook and would import the spreadshee of data, but for this tutorial we're going to fake it and draw approximate locations.
 
-Zoom into the map using the zoom button ![ZoomButton](images/ZoomButton) to the approximate area shown in the red rectangle:
+Zoom into the map using the zoom button ![ZoomButton](images/ZoomButton.png) to the approximate area shown in the red rectangle:
 
 ![ZoomArea](images/MapZoomArea.png)
+
+*Create Layer*
+
+To draw in our new field data, we need to create a layer we can edit. Go to the "Layers" menu at the very top, and select "Create Layer" from the drop-down. There are different kinds of geospatial data formats you can pick, but we'll use a shapefile for now.
 
 ![CreateNewLayer](images/CreateNewLayer.png)
 
 
 *Add point*
 
-![EditButton](images/EditButton.png)
+Now that we have a layer to which we can write, we need to toggle on its editing capability. Select the layer so it's highlighted in blue, then click the Toggle Editing button: ![EditButton](images/EditButton.png) Now a number of other functions are no longer greyed out and we can add a point.
 
-![CreatePointButton](images/CreatePointButton.png)
+Click the Add Point button ![CreatePointButton](images/CreatePointButton.png) and then, when your cursor looks like a target, click on the Kd Formation somewhere near the middle so you get something that looks like this:
 
 ![DakotaPlainPoint](images/Dakota_PlainPoint.png)
+
+But that's just a dot and we want to add some information about our strike and dip data with a geologic symbol. This is where Dr. Langford's work in Inkscape to create .svg files for us from the USGS style book comes in handy. We'll be using the file 6.02_bdg_incld
+.svg
 
 *SVG Symbol*
 
