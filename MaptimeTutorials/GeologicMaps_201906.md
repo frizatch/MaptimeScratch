@@ -1,7 +1,7 @@
 # Geologic Maps: Intro to rocks and QGIS
 
 ![DetailWellsGeologicMap](images/NCARGeologyScreenshot.JPG)
-*Detail of Eldorado Springs Geologic Quadrangle, Wells, 1961*
+*Detail of Eldorado Springs Geologic Quadrangle, Wells, 1967*
 
 ## What this tutorial will cover:
 
@@ -88,9 +88,11 @@ When sedimetary layers are deposited, they are put down in flat layers. After th
 
 *Diagram by GeologyWolf*
 
-- Synclines = a downward fold in sedimentary beds
+- Syncline = a downward fold in sedimentary beds
 
-- Anticlines = an upward fold in sedimentary beds
+- Anticline = an upward fold in sedimentary beds
+
+- Monocline = a fold that only dips in one direction (one part is elevated relative to the other)
 
 ![SynclineAnticline](images/SynclineAnticline.png)
 
@@ -146,17 +148,24 @@ To draw in our new field data, we need to create a layer we can edit. Go to the 
 
 ![CreateNewLayer](images/CreateNewLayer.png)
 
+When you create the layer, you will create the fields you need. For having our strike and dip symbols make sense on the map, we need to add information about the degrees of tilt (dip) and the rotation from north (strike).
+
+![FieldCreationGUI](images/FieldsForSDPoints.png)
+
 
 *Add point*
 
 Now that we have a layer to which we can write, we need to toggle on its editing capability. Select the layer so it's highlighted in blue, then click the Toggle Editing button: ![EditButton](images/EditButton.png) Now a number of other functions are no longer greyed out and we can add a point.
 
-Click the Add Point button ![CreatePointButton](images/CreatePointButton.png) and then, when your cursor looks like a target, click on the Kd Formation somewhere near the middle so you get something that looks like this:
+Click the Add Point button ![CreatePointButton](images/CreatePointButton.png) and then, when your cursor looks like a target, click on the Kd Formation somewhere near the middle. You'll be prompted to fill in the values of your fields.
+
+![StrikeDipDegrees](images/GUIStrikeDipPoint.png)
+
+Your map should look something like this:
 
 ![DakotaPlainPoint](images/Dakota_PlainPoint.png)
 
-But that's just a dot and we want to add some information about our strike and dip data with a geologic symbol. This is where Dr. Langford's work in Inkscape to create .svg files for us from the USGS style book comes in handy. We'll be using the file 6.02_bdg_incld
-.svg
+But that's just a dot and we want to add some information about our strike and dip data with a geologic symbol. This is where Dr. Langford's work in Inkscape to create .svg files for us from the USGS style book and our entered data comes in handy. We'll be using the file 6.02_bdg_incld.svg
 
 *SVG Symbol*
 
