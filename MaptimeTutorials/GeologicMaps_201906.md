@@ -152,12 +152,13 @@ When you create the layer, you will create the fields you need. For having our s
 
 ![FieldCreationGUI](images/FieldsForSDPoints.png)
 
-After you enter information for your field, don't forget to click on the Add field button... in the above image, that hasn't been done yet for the strike rotation field.
+After you enter information for your field, don't forget to click on the Add to fields list! In the above image, that hasn't been done yet for the strike rotation field.
 
 
 *Add point*
 
-Now that we have a layer to which we can write, we need to toggle on its editing capability. Select the layer so it's highlighted in blue, then click the Toggle Editing button: ![EditButton](images/EditingButton.png) Now a number of other functions are no longer greyed out and we can add a point.
+Now that we have a layer to which we can write, we need to toggle on its editing capability. Select the layer so it's highlighted in blue, then click the Toggle Editing button: ![EditButton](images/EditingButton.png)
+Now a number of other functions are no longer greyed out and we can add a point.
 
 Click the Add Point button ![CreatePointButton](images/CreatePointButton.png) and then, when your cursor looks like a target, click on the Kd Formation somewhere near the middle. You'll be prompted to fill in the values of your fields.
 
@@ -187,15 +188,15 @@ After doing this and adjusting the sizes and turning on the label to the dip deg
 
 ### Trace lithologies and symbolize
 
-To have the map fully digitized, we need to trace the colorful blobs we see on the georeferenced map. You go through the same process of creating a layer, but polygon this time, and use the Add Polygon button ![AddPolygon](images/AddPolygonButton) for creating the tracings. For your convenience, I've traced one bit of the Rocky Flats Alluvium and one bit of the Dakota Group for you. You can find them in the file EldoradoQuadLithologies.zip.
+To have the map fully digitized, we need to trace the colorful blobs we see on the georeferenced map. You go through the same process of creating a layer, but polygon this time, and use the Add Polygon button ![AddPolygon](images/AddPolygonButton.png) for creating the tracings. For your convenience, I've traced one bit of the Rocky Flats Alluvium and one bit of the Dakota Group for you. You can find them in the file EldoradoQuadLithologies.zip.
 
 To make the fills of these polygons resemble some standard lithology patterns, we can use pre-made swatches that are in the data folder. Use categorized symbols to have the swatches be distinct to the formations.
 
-![LithologySwatches](images/CategorizedLithologies)
+![LithologySwatches](images/CategorizedLithologies.png)
 
 You end up with something where the swatches represent the types of rocks... kinda.
 
-![FinalMap](images/TwoLithologiesOnMap)
+![FinalMap](images/TwoLithologiesOnMap.png)
 
 
 
