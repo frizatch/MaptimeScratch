@@ -13,7 +13,7 @@ This exercise follows an excellent and more detailed tutorial by Daniel Huffman,
 **What we'll do:**
 
 - Touch on prepping digital elevation data
-- Get oriented to Blender’s UI
+- Get oriented to Blender’s GUI
 - Build a "mesh" that we mold with our elevation data
 - Set up our “photography studio” to highlight our topography with our desired perspective
 - Final product: a Blender file that will let us easily create a hillshade for any DEM we want!
@@ -37,24 +37,31 @@ HuffmanDEM.tif		(2000 x 2800 pixels)
 
 ## Make a Height Map
 
-**Building a .tif Blender can understand from digital elevation data (DEM)**
+**Building a file Blender can understand from digital elevation data (DEM)**
 
 Here are the brief steps that you need to follow to create your own DEM file
 
 - Get data – think about your needed resolution!
+
 	10m x 10m?  - National Elevation dataset
 	30m x 30m? – JAXA …
 
 - Mosaic/merge elevation rasters if needed (you need this if your data is coming in more than one file)
 
-- Reproject your raster to your final CRS before you put anything in Blender!
+- Reproject your raster to your desired CRS before you put it in Blender!
+
+Blender isn't meant for working with spatially located or scaled data, so make sure you convert everything you want to work with to the same projection before you stuff it in. Blender is dimension naive and doesn't have the capability of doing conversions in real space. It operates on "blender units" and has its own relative scale system.
 
 - Clip to your AOI
 
 - Resample DEM if you want to lower its resolution
 
-- Rescale – Blender NEEDS to read an INTEGER TIFF and will round data to integers…
-	thus losing a lot of information in the elevation data if we don’t rescale. Say your original data runs from 40.7m – 120.4m… blah blah blah. Also, if you’re working in Death Valley or wanting to use bathemytry, we need to get rid of negative values because Blender won’t understand them. Our final output target is going to be a 16-bit unsigned integer TIFF. This means that each pixel can hold a number between 0 and 65,535.
+- Rescale – Blender *needs* to read integer values
+
+Blender will round data to integers,thus losing a lot of information in the elevation data if we don’t rescale.
+
+
+Say your original data runs from 40.7m – 120.4m… blah blah blah. Also, if you’re working in Death Valley or wanting to use bathemytry, we need to get rid of negative values because Blender won’t understand them. Our final output target is going to be a 16-bit unsigned integer TIFF. This means that each pixel can hold a number between 0 and 65,535.
 	
 This equation is your friend: (PixelValue – LowElev) ÷ (HighElev – LowElev) * 65,535
  
