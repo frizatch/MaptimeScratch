@@ -115,7 +115,7 @@ You should see a view of the cube from the camera's perspective. You can hit *Es
 
 ![Rendered cube](images/9_RenderedImage.png)
 
-Okay, there is one more tab across the top we need to pay attention to frequently: "File." Because under here we can find our all-important *Save* option. Save your file right now in whichever location you'd like. It will have the suffix *.blend* Feel free to leave it as untitled and change the name later.
+Okay, there is one more tab across the top we need to pay attention to frequently: "File." Because under here we can find our all-important *Save* option. Save your file right now in whichever location you'd like. It will have the suffix *.blend* Feel free to leave it as *untitled* and change the name later.
 
 ![Saving](images/9_SaveBlenderFile.png)
 
@@ -123,11 +123,11 @@ The main menu area we'll be using is the Context Menu on the lower right, also k
 
 One of the items in this Context Menu we want to adjust is the kind of renderer we going to use. Look for the little white icon that seems a bit like an SLR camera. The default renderer is Eevee, but we want to switch to the Cycles renderer:
 
-![](images/11_RenderCycles.png)
+![](images/11_RendererCycles.png)
 
-This isn't enough to accomplish what we want. There is an option under Features that says "Supported", but we want to switch this to "Experimental" because there is one option of adding nodes to our mesh that helps optimize their placement when representing landscapes. This option still isn't in the supported models of 2.8, but we love it. Make sure your settings look like this:
+This isn't enough to accomplish what we want. There is an option under Features that says "Supported", but we want to switch this to "Experimental" because there is one option of adding nodes to our mesh that helps optimize their placement when representing landscapes. This option still isn't in the supported models of 2.8, but we love it. Make sure you've switched to "Experimental" and maybe untoggle "Hair" unless you want to add fur to your mountains sometime:
 
-1[](images/12_FeatureSetToExperimental.png)
+![](images/12_FeatureSetToExperimental.png)
 
 Above the Context Menu, is the Outliner area where the objects in the workspace are listed. You can select the objects by clicking on them in this list, or you can click on them directly in the workspace. They'l turn bright orange when selected.
 
