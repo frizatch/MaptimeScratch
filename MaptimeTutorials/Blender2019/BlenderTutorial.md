@@ -28,9 +28,9 @@ Get 2.8! This new, and very different version has a much slicker interface and m
 
 In the next section, we'll briefly discuss how to prep a height map to use in Blender, but there are two provided for you in this tutorial to get you started in the *data* folder one step back in this repo (Blender2019):
 
-AOI_SouthArapahoePeak	(xxx x xxxxx)
+AOI_SouthArapahoePeak	(1001 x 1325 pixels) 	An example of a close crop of some 10m x 10m elevation data
 
-HuffmanDEM.tif		(2000 x 2800 pixels)
+HuffmanDEM.tif		(2000 x 2800 pixels)	Perfect file from Daniel Huffman's original tutorial
 
 *Remember the pixel dimensions of your file. You'll need them!*
 
@@ -50,6 +50,8 @@ Here are the brief steps that you need to follow to create your own DEM file
   - Blender isn't meant for working with spatially located or scaled data, so make sure you convert everything you want to work with to the same projection before you stuff it in. Blender is dimension naive and doesn't have the capability of doing conversions in real space. It operates on "blender units" and has its own relative scale system.
 
 - Clip to your AOI
+
+  - If your pixels/data don't go all the way to the edge of your file, Blender will try to render those boundaries and you'll get weird walls or other artifacts.
 
 - Resample DEM if you want to lower its resolution
 
@@ -184,7 +186,9 @@ So now that we're familiar with the space, let's start with a blank workspace an
 
 After deleting all your other meshes, use *Shft-A* to add a Plane mesh to your work space. Don't worry if it didn't land in the middle becaue the 3D-cursor was off in a weird place becaue you can adjust the mesh location manually. Make sure your plane is selected and go to the Context Menu and click on the orange box (the object context) if it isn't picked already. You can then type in the XYZ coordinates of your plane manually. Set them all to 0:
 
-![](images/
+![](images/20_AdjustingXYZOfObjectAndScale.png)
+
+Also, this is where the size of our file comes into play. Notice the *Scale* for X is set to 2.0 and Y is 2.8. These numbers correspond to the 2000x2800 size of the HuffmanDEM
 
 Let's go to our Render tab and see what this looks like...
 		
