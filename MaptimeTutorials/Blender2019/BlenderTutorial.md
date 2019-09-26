@@ -139,13 +139,13 @@ This isn't enough to accomplish what we want. There is an option under Features 
 
 ![](images/12_FeatureSetToExperimental.png)
 
-Above the Context Menu, is the Outliner area where the objects in the workspace are listed. You can select the objects by clicking on them in this list, or you can click on them directly in the workspace. They'l turn bright orange when selected.
+Above the Context Menu, is the Outliner area where the objects in the workspace are listed. You can select the objects by clicking on them in this list, or you can click on them directly in the workspace. They'll turn bright orange when selected.
 
 ![](images/12_TwoWaysOfSelectingWithText.png)
 
 The only other menu options we'll be using are located in the upper left corner under our "Render" tab. You'll see a button that looks like this ![](images/12_EditorTypeButton.png). Presently, that means we're in our 3D-View editor. If you click on this button, you'll see a lot of other editor options. We'll use one of these later.
 
-The drop-down under Object mode allows us to swich to Edit mode. You can also flip back and forth between this two modes with the *TAB* key. Our meshes are vector graphics just like we know in spatial data, so we can grab the vertices and drag them around to change the shape of our mesh. Play with your cube a bit if you'd like!
+The drop-down under Object mode allows us to swich to Edit mode. You can also flip back and forth between this two modes with the *TAB* key. Our meshes are vector graphics just like we know in spatial data, so we can grab the vertices/nodes and drag them around to change the shape of our mesh. Play with your cube a bit if you'd like!
 
 ![](images/(14_CubeInEditMode.png)
 
@@ -223,16 +223,28 @@ But we did do something. If we go to that little editor type button in the upper
 
 ![](images/28_ShaderEditorBoxes.png)
 
-To have our plane deform into a landscape, we have to tell it we want it to get displaced from its flat space AND we have to supply the data that tells it *how* to deform.
+**Adding Dimension**
+
+To have our plane deform into a landscape, we have to tell it we want displacement AND we have to supply the data that tells it *how* to deform.
 
 To have our elevation information actually mold our mesh to respresent the landscape, we need to displace the mesh from the flat plane. Blender has many ways of working with making mesh surfaces "bumpy", but we want to force true displacement. So under the "Material" properties, look for the setting "Displacement" and change it from *Default* to *Displacement*:
   
 ![Changing displacement default](images/29_DisplacementOffDefault.png)  
   
-Adding dimension – image texture
-	Subdividing surface
-	UV discussion (quick)
-		render
+Now we want to add in the detailed information that comes from our file. Go to Add > Texture > Image texture and you'll see a new box appear in your Shaded Editor view. Click on the workspace and plop it down. We want to adjust the following settings:
+
+Linear -> Smart
+
+Repeat -> Extended
+
+So your Image Texture box should look like this:
+
+![](images/32_ImageTextureSettings.png)
+
+**Smart Node Placement**
+
+We need to do one more thing. We're going to subdivide the surface of our plane and add vertices to it so all the information we just added has something it can tell to move! But we're going to try to add nodes to areas where more details are needed so the rendering process is more efficient.
+	
 	
 ## Adjusting our View
 
