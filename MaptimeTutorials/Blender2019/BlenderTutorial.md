@@ -54,7 +54,8 @@ Here are the brief steps that you need to follow to create your own DEM file
 
 - Rescale – Blender NEEDS to read an INTEGER TIFF and will round data to integers…
 	thus losing a lot of information in the elevation data if we don’t rescale. Say your original data runs from 40.7m – 120.4m… blah blah blah. Also, if you’re working in Death Valley or wanting to use bathemytry, we need to get rid of negative values because Blender won’t understand them. Our final output target is going to be a 16-bit unsigned integer TIFF. This means that each pixel can hold a number between 0 and 65,535.
- (Pixel Value – lowel) ÷ (highel – lowel) * 65,535
+	
+This equation is your friend: (PixelValue – LowElev) ÷ (HighElev – LowElev) * 65,535
  
 ## Blender Orientation
 
@@ -70,17 +71,27 @@ Click anywhere to make the cute characters go away and you'll be asked to set a 
 
 ![Spacebar setting](images/2_SpacebarDefault.png)
 
-After all the startup windows disappear, you'll see a workspace where we have a studio for viewing and illuminating a landscape we build based off of our height map. It looks like this:
+After all the startup windows disappear, you'll see a workspace where we have a studio for viewing and illuminating a landscape we build based off of our height map. You'll see three objects surrounded by a bunch of buttons. It looks like this:
 
 ![Blender workspace](images/4_BlenderHomesview.png)
 
-The cube in the middle is the default object Blender loads. The cube is one kind of base mesh one can use to construct subjects. We're going to use a different mesh for our landscape, but we'll play with this one for starters.
+The cube in the middle is the default object Blender loads to work with. The cube is one kind of base mesh for constructing shapes. We're going to use a different mesh for our landscape, but we'll play with this one for starters.
 
-The weird, floating, see-through pyramid with a triangle on it is our camera.
+The weird, floating, see-through pyramid with a triangle on it is our camera. When Blender renders a scene, it is the perspective of this camera that forms the view.
 
 The third thing, the dot with dashed haloes, is the light source for our studio.
 
-Camera Cube and Mesh
+**Navigating**
+
+Moving around in this interface is not intuitive. And it's really hard without a 3-button mouse unless we tell Blender we're lowly geospatial folk that aren't equipped with gamer hardware. So, **IMPORTANT**: We need to set our user preferences by going up to the menus at the top and follow
+
+Edit > Preferences > Input
+
+and toggle on the option for "Emulate 3-Button Mouse."
+
+![Preference](images/6_EditPreferences.png)
+
+![3 button mouse toggle](images/7_3ButtonMouseEmulation.png)
 
 ## Creating our Landscape Mesh
 
