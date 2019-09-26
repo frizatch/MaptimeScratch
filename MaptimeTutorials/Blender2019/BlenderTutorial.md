@@ -70,6 +70,16 @@ Click anywhere to make the cute characters go away and you'll be asked to set a 
 
 ![Spacebar setting](images/2_SpacebarDefault.png)
 
+After all the startup windows disappear, you'll see a workspace where we have a studio for viewing and illuminating a landscape we build based off of our height map. It looks like this:
+
+![Blender workspace](images/4_BlenderHomesview.png)
+
+The cube in the middle is the default object Blender loads. The cube is one kind of base mesh one can use to construct subjects. We're going to use a different mesh for our landscape, but we'll play with this one for starters.
+
+The weird, floating, see-through pyramid with a triangle on it is our camera.
+
+The third thing, the dot with dashed haloes, is the light source for our studio.
+
 Camera Cube and Mesh
 
 ## Creating our Landscape Mesh
