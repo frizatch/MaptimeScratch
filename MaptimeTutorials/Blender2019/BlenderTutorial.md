@@ -115,7 +115,20 @@ You should see a view of the cube from the camera's perspective. You can hit *Es
 
 ![Rendered cube](images/9_RenderedImage.png)
 
-The main menu area we'll be using is the "Properties Panel" on the lower right. It defaults to being on the object menu, but you can click on all the colored icons in the vertical column to expose property settings for all sorts of Blender functionalities.
+Okay, there is one more tab across the top we need to pay attention to frequently: "File." Because under here we can find our all-important *Save* option. Save your file right now in whichever location you'd like. It will have the suffix *.blend* Feel free to leave it as untitled and change the name later.
+
+![Saving](images/9_SaveBlenderFile.png)
+
+The main menu area we'll be using is the Context Menu on the lower right, also known as the Properties Panel. It defaults to the object context, but you can click on all the colored icons in the vertical column to expose property settings for all sorts of Blender functionalities. Hover over the icons if you'd like to see what they represent.
+
+One of the items in this Context Menu we want to adjust is the kind of renderer we going to use. Look for the little white icon that seems a bit like an SLR camera. The default renderer is Eevee, but we want to switch to the Cycles renderer:
+
+![](images/11_RenderCycles.png)
+
+Above the Context Menu, is the Outliner area where the objects in the workspace are listed. You can select the objects by clicking on them in this list, or you can click on them directly in the workspace. They'l turn bright orange when selected.
+
+![](images/12_TwoWaysOfSelectingWithText.png)
+
 
 ## Creating our Landscape Mesh
 
