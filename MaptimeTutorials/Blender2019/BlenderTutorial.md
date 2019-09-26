@@ -292,7 +292,19 @@ We can see that switching the settings as above put our camera directly above ou
 ![](images/40_CameraPointingDown.png)
 
 
+![](images/41_PrinterIconDimensionResolution.png)
+
+![](images/42_CameraViewSameRatio.png)
+
+![](images/43_PerspectiveToOrthographic.png)
+
+![](images/44_OrthographicScale.png)
+
 
 
 ## Adjusting our Light Source
+
+![](images/50_InteractivelyPointLight.png)
+
+![](images/51_SunStrength.png)
 
