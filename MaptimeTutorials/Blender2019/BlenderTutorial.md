@@ -1,6 +1,7 @@
+![](images/1_Blender_logo__no_text.png.png)
 # Blender: Making topographic relief beautiful
 
-![](images/Blender_____.png)
+![](images/1_BlenderHSBanner.png)
 
 ## Tutorial Overview
 Blender is a complex, opensource 3D animation software that we can use for rendering digital elevation models for beautiful relief cartography and scene building. The advantage of Blender is it’s built for flexible light simulation so we can create more realistic visuals on our landscape within this software relative to GIS platforms.
