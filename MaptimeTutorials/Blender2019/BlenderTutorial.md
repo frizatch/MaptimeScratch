@@ -83,15 +83,39 @@ The third thing, the dot with dashed haloes, is the light source for our studio.
 
 **Navigating**
 
-Moving around in this interface is not intuitive. And it's really hard without a 3-button mouse unless we tell Blender we're lowly geospatial folk that aren't equipped with gamer hardware. So, **IMPORTANT**: We need to set our user preferences by going up to the menus at the top and follow
+Moving around in this interface is not intuitive. And it's really hard without a 3-button mouse unless we *tell* Blender we're lowly geospatial folk that aren't equipped with gamer hardware
 
-Edit > Preferences > Input
-
-and toggle on the option for "Emulate 3-Button Mouse."
+So, **IMPORTANT**: Set user preferences by going up to the menus at the top and follow *Edit > Preferences > Input* and toggle on the option for "Emulate 3-Button Mouse" ... unless you actually have a 3 button mouse. These settings are automatically saved.
 
 ![Preference](images/6_EditPreferences.png)
 
 ![3 button mouse toggle](images/7_3ButtonMouseEmulation.png)
+
+Now we can move around the space with the following commands
+
+Mouse:
+
+- Zoom in and out = Scroll wheel if you have one OR Alt + ctrl + left click/hold and drag 
+- Spinning or rotating the view = click/hold middle button (scroll wheel) and drag OR Alt + left click/hold and drag
+- Panning = (not sure with a 3-button mouse) OR Shift +Alt + click/hold and drag
+
+Touch pad (mac):
+
+- Zoom in and out = spread/contract two fingers on touch pad
+- Spinning or rotating the view = Alt  + click/hold and drag
+- Panning = Shift + Alt + click/hold and drag
+
+**Menus**
+
+Let's look at the tabs across the top. You'll see we're in "Layout" right now, and we'll pretty much stay there for the whole tutorial. The only other tab we'll use is the "Render" tab. In fact, try it right now. Go to *Render > Render Image* and see what happens!
+
+![](images/8_RenderImageDropdown.png)
+
+You should see a view of the cube from the camera's perspective. You can hit *Esc* to make this window go away.
+
+![Rendered cube](images/9_RenderedImage.png)
+
+The main menu area we'll be using is the "Properties Panel" on the lower right. It defaults to being on the object menu, but you can click on all the colored icons in the vertical column to expose property settings for all sorts of Blender functionalities.
 
 ## Creating our Landscape Mesh
 
