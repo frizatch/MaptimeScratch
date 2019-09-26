@@ -125,6 +125,10 @@ One of the items in this Context Menu we want to adjust is the kind of renderer 
 
 ![](images/11_RenderCycles.png)
 
+This isn't enough to accomplish what we want. There is an option under Features that says "Supported", but we want to switch this to "Experimental" because there is one option of adding nodes to our mesh that helps optimize their placement when representing landscapes. This option still isn't in the supported models of 2.8, but we love it. Make sure your settings look like this:
+
+1[](images/12_FeatureSetToExperimental.png)
+
 Above the Context Menu, is the Outliner area where the objects in the workspace are listed. You can select the objects by clicking on them in this list, or you can click on them directly in the workspace. They'l turn bright orange when selected.
 
 ![](images/12_TwoWaysOfSelectingWithText.png)
