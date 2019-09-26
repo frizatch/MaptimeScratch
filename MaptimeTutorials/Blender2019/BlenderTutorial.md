@@ -264,7 +264,7 @@ We want to switch our modifier setting to Simple and toggle on "Adaptive" (this 
 
 ![](images/35_ModifierSimpleAdaptiveSettings.png)
 
-Now let's see what we've done! Go to the Render tab and give it a look!
+Now let's see what we've done! Go to the Render tab and give it a look:
 
 ![](image/36_RenderWithDefaultScale.png)
 
