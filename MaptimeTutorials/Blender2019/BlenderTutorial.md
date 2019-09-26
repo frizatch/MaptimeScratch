@@ -135,7 +135,32 @@ Above the Context Menu, is the Outliner area where the objects in the workspace 
 
 The only other menu options we'll be using are located in the upper left corner under our "Render" tab. You'll see a button that looks like this ![](images/12_EditorTypeButton.png). Presently, that means we're in our 3D-View editor. If you click on this button, you'll see a lot of other editor options. We'll use one of these later.
 
-The drop-down under Object mode allows us to swich to Edit mode. You can also flip back and forth between this two modes with the **TAB** key. Our meshes are vector graphics just like we're use to in spatial data, so we can grab the vertices and drag them around to change the shape of our mesh. Play with your cube a bit if you'd like!
+The drop-down under Object mode allows us to swich to Edit mode. You can also flip back and forth between this two modes with the *TAB* key. Our meshes are vector graphics just like we know in spatial data, so we can grab the vertices and drag them around to change the shape of our mesh. Play with your cube a bit if you'd like!
+
+![](images/(14_CubeInEditMode.png)
+
+The vertical menu on the upper left side has a few buttons that control our mouse function we'll use just to get familiar with the space. Hover over some of them to see what they are. Right now, our mouse is on the default "Select Box" tool at the top so we can click/drag and select many things at once. The 3rd button down with the arrows is used for dragging around objects in our workspace. You can move meshes, the camera and the light source when they're selected (don't forget the two ways of selecting!).
+
+The red & white circle thing is strange. It's called the 3D cursor and it helps with controlling the location of objects. Pick this tool, then click around on the workspace... the red & white circle moves to where you click.
+
+![](images/16_ControllingCursorLocation.png)
+
+Not terribly exciting. BUT, it becomes more fun once we talk about importing new meshes!
+
+There is another menu to mention here that allows for more controlled movement of this cursor (and other things) in the workspace: the object contect menu. You find it by right clicking in blank space. If you go to "Snap", you'll see ways of snapping the cursor to other objects, etc. Play around.
+
+![](images/17_MovingCursorToSelected.png)
+
+
+
+
+**Meshes**
+
+I mentioned that the cube was one of many basic mesh forms we can add to Blender. Go to the "Add" menu up near the "Object Mode" menu and click on it. (The menu items in this area are fairly easy to understand, happily!) You can also use the shortcut *Shft-A* to pull up this add menu. Pick a mesh and add anything you'd like... and notice where it lands relative to your 3-D cursor.
+
+![](images/15_AddingAPlaneMesh.png)
+
+
 
 
 
