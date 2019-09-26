@@ -268,12 +268,31 @@ Now let's see what we've done! Go to the Render tab and give it a look!
 
 ![](image/36_RenderWithDefaultScale.png)
 
-Woohoo? This looks crazy, but if you adjust the Scale setting in the Displacement box, you can calm it down. I found a setting of 
+Woohoo? This looks crazy, but if you adjust the Scale setting in the Displacement box, you can calm it down. I found a setting of 0.1 worked pretty well:
 
 ![](image/36_RenderWithAdjustedScale.png)
 
 Woohoo!
+
+
 ## Adjusting our View
+
+But if we don't want to look at our rendered landscape from the side in a 3D view and use it for a hillshade basemap, we need to adjust our camera. Right now, we can move to exactly the viewpoint of the camera by following *View > Active Camera*. To get out of this perspective, just move your mouse around.
+
+![](images/36_ViewActiveCamera.png)
+
+The good news is you can move the camera just like mesh objects! Select the camera from the list so it's bright orange and then go to the Context Menu and find the camera icon.
+
+![](images/37_CameraLocationSettingsDefault.png)
+
+![](images/38_CameraSettingsOverheadAndDown.png)
+
+We can see that switching the settings as above put our camera directly above our landscape:
+
+![](images/40_CameraPointingDown.png)
+
+
+
 
 ## Adjusting our Light Source
 
