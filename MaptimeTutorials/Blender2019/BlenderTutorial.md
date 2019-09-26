@@ -230,6 +230,8 @@ To have our plane deform into a landscape, we have to tell it we want displaceme
 To have our elevation information actually mold our mesh to respresent the landscape, we need to displace the mesh from the flat plane. Blender has many ways of working with making mesh surfaces "bumpy", but we want to force true displacement. So under the "Material" properties, look for the setting "Displacement" and change it from *Default* to *Displacement*:
   
 ![Changing displacement default](images/29_DisplacementOffDefault.png)  
+
+You'll see a new box labeled Displacement pop up in the workspace.
   
 Now we want to add in the detailed information that comes from our file. Go to Add > Texture > Image texture and you'll see a new box appear in your Shaded Editor view. Click on the workspace and plop it down. Click where it says "Open" and navigate to the elevation data file you would like to use. You should see your file name appear in the top of the box. We also want to adjust the following settings:
 
@@ -262,6 +264,15 @@ We want to switch our modifier setting to Simple and toggle on "Adaptive" (this 
 
 ![](images/35_ModifierSimpleAdaptiveSettings.png)
 
+Now let's see what we've done! Go to the Render tab and give it a look!
+
+![](image/36_RenderWithDefaultScale.png)
+
+Woohoo? This looks crazy, but if you adjust the Scale setting in the Displacement box, you can calm it down. I found a setting of 
+
+![](image/36_RenderWithAdjustedScale.png)
+
+Woohoo!
 ## Adjusting our View
 
 ## Adjusting our Light Source
