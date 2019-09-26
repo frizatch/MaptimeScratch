@@ -133,7 +133,11 @@ Above the Context Menu, is the Outliner area where the objects in the workspace 
 
 ![](images/12_TwoWaysOfSelectingWithText.png)
 
-The only other menu options we'll be using are located in the upper left corner under our "Render" tab. You'll see a
+The only other menu options we'll be using are located in the upper left corner under our "Render" tab. You'll see a button that looks like this ![](images/12_EditorTypeButton.png). Presently, that means we're in our 3D-View editor. If you click on this button, you'll see a lot of other editor options. We'll use one of these later.
+
+The drop-down under Object mode allows us to swich to Edit mode. You can also flip back and forth between this two modes with the **TAB** key. Our meshes are vector graphics just like we're use to in spatial data, so we can grab the vertices and drag them around to change the shape of our mesh. Play with your cube a bit if you'd like!
+
+
 
 
 ## Creating our Landscape Mesh
