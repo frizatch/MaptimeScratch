@@ -250,9 +250,13 @@ Now, take the little dot from Color on the Image Texture box and link it to Heig
 
 We need to do one more thing. We're going to subdivide the surface of our plane and add vertices to it so all the information we just added has something it can tell to move! But we're going to try to add nodes to areas where more details are needed so the rendering process is more efficient.
 
-Look for the blue wrench in the Context Menu, click on it, then click on add modifier:
+Look for the blue wrench in the Context Menu, click on it, then click on Add Modifier:
 
 ![](images/34_AddModifierBlueWrench.png)
+
+You'll see a ton of options pop up. We want "Subdivsion Surface":
+
+![](images/34_SubdivisionSurface.png)
 
 We want to switch our modifier setting to Simple and toggle on "Adaptive" (this is the option available with the Experimental option we picked earlier for our Cycles renderer).
 
