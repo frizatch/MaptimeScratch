@@ -61,6 +61,8 @@ Here are the brief steps that you need to follow to create your own DEM file
 	
   - This equation is your friend: (PixelValue – LowElev) ÷ (HighElev – LowElev) * 65,535
  
+ 
+ 
 ## Blender Orientation
 
 **What are ALL THESE THINGS?**
@@ -179,6 +181,10 @@ So now that we're familiar with the space, let's start with a blank workspace an
 ## Creating our Landscape Mesh
 
 **Add a Plane**
+
+After deleting all your other meshes, use *Shft-A* to add a Plane mesh to your work space. Don't worry if it didn't land in the middle becaue the 3D-cursor was off in a weird place becaue you can adjust the mesh location manually. Make sure your plane is selected and go to the Context Menu and click on the orange box (the object context) if it isn't picked already. You can then type in the XYZ coordinates of your plane manually. Set them all to 0:
+
+![](images/
 
 Let's go to our Render tab and see what this looks like...
 		
