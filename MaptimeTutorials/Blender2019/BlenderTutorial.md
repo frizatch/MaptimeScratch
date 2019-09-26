@@ -272,7 +272,7 @@ Woohoo? This looks crazy, but if you adjust the Scale setting in the Displacemen
 
 ![](image/36_RenderWithAdjustedScale.png)
 
-Woohoo!
+Woohoo! (Ahem, I'm not sure why these files aren't showing up, but you can ask me to show them to you...)
 
 
 ## Adjusting our View
@@ -291,12 +291,21 @@ We can see that switching the settings as above put our camera directly above ou
 
 ![](images/40_CameraPointingDown.png)
 
+But our lense isn't matching the kind of view we want for making a basemap. That is, it's not exactly matching the dimensions of our plane, and it doesn't have an orthographic view. But we can easily adjust for those settings!
+
+Go to the Context Menu and find a printer icon. In here, if you enter the pixel values of your image into the X and Y spaces for resolution, the camera will sync up on some level. So I would replace these values with 2000 and 2800:
 
 ![](images/41_PrinterIconDimensionResolution.png)
 
+Now, if we go to *View > Active Camera* our view and plane have the same ratio.
+
 ![](images/42_CameraViewSameRatio.png)
 
+But as we said, we're making a map. But there's an easy setting switch for that in the camera's Context Menu:
+
 ![](images/43_PerspectiveToOrthographic.png)
+
+The last trick is to match the camera to the extent of the plane exactly. Weirdly, in the orthographic mode, if you set the scale distance to exactly twice the length of your longer side (in Blender units), it completely syncs up. In this case, 5.6 is twice 2.8:
 
 ![](images/44_OrthographicScale.png)
 
@@ -304,7 +313,16 @@ We can see that switching the settings as above put our camera directly above ou
 
 ## Adjusting our Light Source
 
+The last adjustment is turning our light into a Sun setting and playing with the angle of the rays (think time of day) and the strength of the sun. I found the default of 1000 quite bright and cut it back to 1. If you select the lamp in the Outliner and then go to the little green lightbulb in the Context Menu, you can play with these settings. Control the position of the "Sun" by entering in degrees that declare where it should be in a N-S-E-W kind of way. Remember, digital elevations start looking weird/inverted to people if they are illuminated from the SE (lower right).
+
+The light ray has an interactive circle you can just grab and pull around for the angle:
+
 ![](images/50_InteractivelyPointLight.png)
 
 ![](images/51_SunStrength.png)
+
+
+Congrats! You've made a gorgeous hillshade you can use as a basemap. Once all your settings make you happy, render in your studio, then use *Image > Save* in the render window to export your work!
+
+
 
