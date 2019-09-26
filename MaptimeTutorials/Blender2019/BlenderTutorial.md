@@ -10,7 +10,7 @@ The UI for Blender is overwhelming (SO MANY THINGS!), but this tutorial is meant
 
 This exercise follows an excellent and more detailed tutorial by Daniel Huffman, but I've pulled out the skeleton of his workflow and updated the visuals with the 2.8 release UI and nuances. For more in-depth discussion of what we're doing, please see his tutorial for 2.79 (He'll be updating for 2.8 soon!). It's excellent: [Huffman Tutorial](https://somethingaboutmaps.wordpress.com/2017/11/16/creating-shaded-relief-in-blender/)
 
-What we'll do:
+**What we'll do:**
 
 - Touch on prepping digital elevation data
 - Get oriented to Blender’s UI
@@ -36,7 +36,7 @@ HuffmanDEM.tif		(2000 x 2800 pixels)
 
 ## Make a Height Map
 
-**Building a .tif Blender can understand from digital elevation data (DEM)
+**Building a .tif Blender can understand from digital elevation data (DEM)**
 
 Here are the brief steps that you need to follow to create your own DEM file
 
@@ -55,14 +55,34 @@ Here are the brief steps that you need to follow to create your own DEM file
 - Rescale – Blender NEEDS to read an INTEGER TIFF and will round data to integers…
 	thus losing a lot of information in the elevation data if we don’t rescale. Say your original data runs from 40.7m – 120.4m… blah blah blah. Also, if you’re working in Death Valley or wanting to use bathemytry, we need to get rid of negative values because Blender won’t understand them. Our final output target is going to be a 16-bit unsigned integer TIFF. This means that each pixel can hold a number between 0 and 65,535.
  (Pixel Value – lowel) ÷ (highel – lowel) * 65,535
+ 
+## Blender Orientation
 
+**What are ALL THESE THINGS?**
 
-## Creating our landscape mesh
-Plane
-		render
-	Location and size
-	Assigning a Material
-  In order to have our elevation information actually mold our mesh to respresent the landscape, we need to displace the mesh from the flat plane. Blender has many ways of working with making mesh surfaces "bumpy", but we want to force true displacement. So under the "Material" properties, look for the setting "Displacement" and change it from *Default* to *Displacement*:
+Okay, I'm not answering that because the GUI is overwhelming, but here's how to start...
+
+When you first open Blender 2.8, you'll see something like this:
+
+![Blender logo](images/1_OpeningBlender.png)
+
+Click anywhere to make the cute characters go away and you'll be asked to set a default for your spacebar. Because we're not focused on animations, I recommend switching away from *Play* to *Tools*:
+
+![Spacebar setting](images/2_SpacebarDefault.png)
+
+Camera Cube and Mesh
+
+## Creating our Landscape Mesh
+
+**Add a Plane**
+
+Let's go to our Render tab and see what this looks like...
+		
+**Adjust location and size**
+
+**Assigning a Material**
+	
+To have our elevation information actually mold our mesh to respresent the landscape, we need to displace the mesh from the flat plane. Blender has many ways of working with making mesh surfaces "bumpy", but we want to force true displacement. So under the "Material" properties, look for the setting "Displacement" and change it from *Default* to *Displacement*:
   
 ![Changing displacement default](images/29_DisplacementOffDefault.png)  
   
