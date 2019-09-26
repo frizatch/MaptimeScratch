@@ -231,21 +231,33 @@ To have our elevation information actually mold our mesh to respresent the lands
   
 ![Changing displacement default](images/29_DisplacementOffDefault.png)  
   
-Now we want to add in the detailed information that comes from our file. Go to Add > Texture > Image texture and you'll see a new box appear in your Shaded Editor view. Click on the workspace and plop it down. We want to adjust the following settings:
+Now we want to add in the detailed information that comes from our file. Go to Add > Texture > Image texture and you'll see a new box appear in your Shaded Editor view. Click on the workspace and plop it down. Click where it says "Open" and navigate to the elevation data file you would like to use. You should see your file name appear in the top of the box. We also want to adjust the following settings:
 
 Linear -> Smart
 
-Repeat -> Extended
+Repeat -> Extend
 
 So your Image Texture box should look like this:
 
 ![](images/32_ImageTextureSettings.png)
 
+Now, take the little dot from Color on the Image Texture box and link it to Height on the Dispacement box. Your build should look like this:
+
+![](images/33_FinalShaderEditorBoxes.png)
+
+
 **Smart Node Placement**
 
 We need to do one more thing. We're going to subdivide the surface of our plane and add vertices to it so all the information we just added has something it can tell to move! But we're going to try to add nodes to areas where more details are needed so the rendering process is more efficient.
-	
-	
+
+Look for the blue wrench in the Context Menu, click on it, then click on add modifier:
+
+![](images/34_AddModifierBlueWrench.png)
+
+We want to switch our modifier setting to Simple and toggle on "Adaptive" (this is the option available with the Experimental option we picked earlier for our Cycles renderer).
+
+![](images/35_ModifierSimpleAdaptiveSettings.png)
+
 ## Adjusting our View
 
 ## Adjusting our Light Source
