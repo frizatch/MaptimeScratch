@@ -26,7 +26,7 @@ You can download Blender software here: [Blender download](https://www.blender.o
 
 Get 2.8! This new, and very different version has a much slicker interface and many of the odd hangups from previous releases have been happily tweakee, so we don't have to do all the steps that 2.79 required. However, if you're following instructions made before this release for whatever you're investigating, you can still get older versions.
 
-In the next section, we'll briefly discuss how to prep a height map to use in Blender, but there are two provided for you in this tutorial to get you started in the *data* folder one step back in this repo (Blender2019):
+In the next section, we'll briefly discuss how to prep a height map to use in Blender, but there are two provided for you in this tutorial to get you started in the *DEMs* folder one step back in this repo (Blender2019):
 
 AOI_SouthArapahoePeak	(1001 x 1325 pixels) 	An example of a close crop of some 10m x 10m elevation data
 
