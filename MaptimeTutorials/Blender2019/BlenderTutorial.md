@@ -32,6 +32,8 @@ AOI_SouthArapahoePeak	(1001 x 1325 pixels) 	An example of a close crop of some 1
 
 HuffmanDEM.tif		(2000 x 2800 pixels)	Perfect file from Daniel Huffman's original tutorial
 
+To download a file, click on the filename name and you'll see a Download option on the individual page for that file.
+
 *Remember the pixel dimensions of your file. You'll need them!*
 
 
@@ -177,25 +179,52 @@ To clean it up, you can delete selected objects with the shortcut key X. Don't w
 So now that we're familiar with the space, let's start with a blank workspace and start on our topographic rendering!
 
 
-
-
-
 ## Creating our Landscape Mesh
 
 **Add a Plane**
 
-After deleting all your other meshes, use *Shft-A* to add a Plane mesh to your work space. Don't worry if it didn't land in the middle becaue the 3D-cursor was off in a weird place becaue you can adjust the mesh location manually. Make sure your plane is selected and go to the Context Menu and click on the orange box (the object context) if it isn't picked already. You can then type in the XYZ coordinates of your plane manually. Set them all to 0:
+After deleting all your other meshes, use *Shft-A* to add a Plane mesh to your work space.
+
+![](images/15_CenteredPlaneMesh.png)
+
+**Adjust location and size**
+
+Don't worry if it didn't land in the middle becaue the 3D-cursor was off in a weird place becaue you can adjust the mesh location manually. Make sure your plane is selected and go to the Context Menu and click on the orange box (the object context) if it isn't picked already. You can then type in the XYZ coordinates of your plane manually. Set them all to 0:
 
 ![](images/20_AdjustingXYZOfObjectAndScale.png)
 
-Also, this is where the size of our file comes into play. Notice the *Scale* for X is set to 2.0 and Y is 2.8. These numbers correspond to the 2000x2800 size of the HuffmanDEM
-
-Let's go to our Render tab and see what this looks like...
-		
-**Adjust location and size**
+Also, this is where the size of our file comes into play. Notice the *Scale* for X is set to 2.0 and Y is 2.8. These numbers correspond to the 2000 x 2800 size of the HuffmanDEM.tif.	
 
 **Assigning a Material**
-	
+
+Now we want to tell Blender what our plane is made of so it knows how to bounce light off of it. There are LOTS of variables you can change here like color, etc., but we're just going to assign a basic material and adjust what light scattering method we want Blender to use.
+
+Select the material icon from in the Context Menu:
+
+![](images/22_PropertiesPanelDefaultMaterial.png)
+
+Click on "New" to add a material to our plane. The only thing we need to change in the following menu is the Surface setting, but feel free to play around with these options at a later time. I, personally, want to make a metallic landscape one day.
+
+![](images/23_AfterClickingNewMaterial.png)
+
+The Surface setting is where we're declaring how light should bounce around. We want to pick DiffuseBSDF, which stands for bidirectional scattering distribution function, if you're interested.
+
+![](images/24_DiffuseBSDF.png)
+
+Let's take a look and see what happens when we render our scene at this point:
+
+![](images/26_BoringRenderedPlan/png)
+
+Yep, pretty boring.
+
+But we did do something. If we go to that little editor type button in the upper left and switch to a Shade Editor, we can see that we added some information that controls our mesh:
+
+![](images/27_ShaderEditor.png)
+
+![](images/28_ShaderEditorBoxes.png)
+
+To have our plane deform into a landscape, we have to tell it we want it to get displaced from its flat space AND we have to supply the data that tells it *how* to deform.
+
 To have our elevation information actually mold our mesh to respresent the landscape, we need to displace the mesh from the flat plane. Blender has many ways of working with making mesh surfaces "bumpy", but we want to force true displacement. So under the "Material" properties, look for the setting "Displacement" and change it from *Default* to *Displacement*:
   
 ![Changing displacement default](images/29_DisplacementOffDefault.png)  
