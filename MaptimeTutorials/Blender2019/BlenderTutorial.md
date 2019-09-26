@@ -160,6 +160,13 @@ I mentioned that the cube was one of many basic mesh forms we can add to Blender
 
 ![](images/15_AddingAPlaneMesh.png)
 
+After a lot of messing around, your workspace may look like this:
+
+![](images/15_MeshAssortment.png)
+
+To clean it up, you can delete selected objects with the shortcut key X. Don't worry, Blender will ask you to confirm your deletion before it does it.
+
+So now that we're familiar with the space, let's start with a blank workspace and start on our topographic rendering!
 
 
 
