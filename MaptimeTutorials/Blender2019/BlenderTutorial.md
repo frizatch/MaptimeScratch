@@ -133,6 +133,8 @@ Above the Context Menu, is the Outliner area where the objects in the workspace 
 
 ![](images/12_TwoWaysOfSelectingWithText.png)
 
+The only other menu options we'll be using are located in the upper left corner under our "Render" tab. You'll see a
+
 
 ## Creating our Landscape Mesh
 
