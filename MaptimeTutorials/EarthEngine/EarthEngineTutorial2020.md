@@ -10,9 +10,31 @@ But this is Google Earth ENGINE:
 
 It's planetary-scale platform for doing data science. Google Earth Engine allows users to run algorithms on georeferenced imagery and vectors stored on Google's infrastructure.
 
+A good place for more orientation: https://earthengine.google.com/faq/
+
 ## The Earth Engine Data Catalog
 
+https://developers.google.com/earth-engine/datasets
+
+## Data
+
+### Types
+
+Image
+
+Vector
+
+Load your own!
+- Shapefiles
+- CSVs (lat/lon columns, or spatial geometry column such as geoJSON)
+
+### Satellites
+
 ## The Code Editor
+
+Use your registered Google account to access the code editor here:
+https://code.earthengine.google.com/
+
 
 *CENTER panel*
 - Javascript code editor
@@ -32,9 +54,9 @@ It's planetary-scale platform for doing data science. Google Earth Engine allows
 - Map Output! (Base map plus layers added from script)
 
 
-## Data Structures
+## Getting Started
 
-## Javascript - Some Basics
+## Javascript
 
 ## Examples
 
