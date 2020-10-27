@@ -81,17 +81,17 @@ https://code.earthengine.google.com/
 
 ## Getting Started
 
-Request access to Google Earth Engine
+*Request access to Google Earth Engine*
 - There's a handy button for that here: https://developers.google.com/earth-engine/
 
-Wait for your approval email
+*Wait for your approval email*
 - This will come to your one account registered with Google
 - It comes pre-loaded with helpful links!
 
-Open the Code Editor
+*Open the Code Editor and log in with your registered email*
 - https://code.earthengine.google.com/
 
-Create a home folder, repositories and folders under "Scripts" tab > Owner
+*Create a home folder, repositories and folders under "Scripts" tab > Owner*
 - You won't be able to change the name of your home folder, so choose wisely!
 
 ![Message regarding naming home folder](imagesEngine/EarthEngineHomeFolder_sm.jpg)
@@ -100,7 +100,8 @@ Create a home folder, repositories and folders under "Scripts" tab > Owner
 
 ![Message regarding naming folders](imagesEngine/EarthEngineFolders_sm.jpg)
 
-Load code examples or write your own and start playing!
+*Load code examples or write your own and start playing!*
+![script example](imageEngine/EarthEngineAddToMap_code_sm.JPG)
 - Look under "Examples" under the Scripts tab and click on them to auto-load scripts
 - The Docs tab has a great guide for API calls. Here's an example for a histogram function and needed/optional arguments:
 ![list of U I functions](imagesEngine/ChartImageHistogram_hl.png) Click ----> ![arguments for histogram function](imagesEngine/EarthEngineChartHistogramDoc_sm.png)
