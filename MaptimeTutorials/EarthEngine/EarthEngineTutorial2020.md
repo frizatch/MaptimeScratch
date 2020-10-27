@@ -86,19 +86,22 @@ Request access to Google Earth Engine
 
 Wait for your approval email
 - This will come to your one account registered with Google
-- It comes pre-loaded with helpful links
+- It comes pre-loaded with helpful links!
 
 Open the Code Editor
 - https://code.earthengine.google.com/
 
 Create a home folder, repositories and folders under "Scripts" tab > Owner
 - You won't be able to change the name of your home folder, so choose wisely!
-![Message regarding naming home folder](imagesEngine/EarthEngineHomeFolder_sm.JPG)
+![Message regarding naming home folder](imagesEngine/EarthEngineHomeFolder_sm.jpg)
 - Repositories can project specific
 - Recommendation: create a "sandbox" or "scratch" repository!
-![Message regarding naming folders](imagesEngine/EarthEngineFolders_sm.JPG)
+![Message regarding naming folders](imagesEngine/EarthEngineFolders_sm.jpg)
 
-## Javascript meh?
+Load code examples or write your own and start playing!
+- Look under "Examples" under the Scripts tab and click on them to auto-load scripts
+- The Docs tab has a great guide for API calls. Here's an example for a histogram function and needed arguments:
+![list of U I functions](imagesEngine/ChartImageHistogram_hl.png) Click to see: ![arguments for histogram function](imagesEngine/EarthEngineChartHistogramDoc_sm.png)
 
 ## Examples
 
