@@ -119,4 +119,70 @@ Map.setCenter(-107, 39, 6);
 
 ```
 
-### Urban Areas Impervious Surface Growth (does it ever shrink?)
+### Urban Areas Impervious Surface Growth
+
+```
+// Draft script for examining impervious transitions by census tract
+// by Diane Fritz
+// 20201027
+
+//Load temporal impervious surface and census tract data
+var imperv = ee.Image("Tsinghua/FROM-GLC/GAIA/v10");
+var tracts = ee.FeatureCollection('TIGER/2010/Tracts_DP1');
+
+// Use Inspector on TIGER Tracts layer on map to find census tract of interest
+// Look under "properties" and enter unique tract geoid below
+
+// var tractgeoid = '08031001902'; //Auraria CO
+// var tractgeoid = '49035113107'; //Herriman UT
+var tractgeoid = '08031001902';
+
+// Create single census tract feature
+var singletract = ee.FeatureCollection('TIGER/2010/Tracts_DP1')
+    .filter(ee.Filter.eq('geoid10',tractgeoid));
+
+// Clip to the output image to selected tract
+var impervselect = imperv.clipToCollection(singletract);
+
+
+var impervvis = {
+  bands: ['change_year_index'],
+  min: 0.0,
+  max: 34.0,
+  opacity: 0.7,
+  palette: [
+    "014352","1A492C","071EC4","B5CA36","729EAC","8EA5DE",
+    "818991","62A3C3","CCF4FE","74F0B9","32BC55","C72144",
+    "56613B","C14683","C31C25","5F6253","11BF85","A61B26",
+    "99FBC5","188AAA","C2D7F1","B7D9D8","856F96","109C6B",
+    "2DE3F4","9A777D","151796","C033D8","510037","640C21",
+    "31A191","223AB0","B692AC","2DE3F4",
+  ]
+};
+
+// Reset lon & lat and zoom level to tract of interest.
+// Map.setCenter(-105.01, 39.747, 14.5); //Auraria
+// Map.setCenter(-112.01, 40.515, 13); //Herriman
+
+// Choose layers you want to visualize on the map by uncommenting line:
+
+// Map.addLayer(imperv, impervvis, "Change year index");
+// Map.addLayer(impervselect, impervvis, "Change year index");
+// Map.addLayer(tracts);
+// Map.addLayer(singletract);
+
+
+// Generate the histogram data for selected tract
+var histogram = ui.Chart.image.histogram({
+  image: impervselect,
+  region: singletract,
+  scale: 15,
+  minBucketWidth: 1
+});
+histogram.setOptions({
+  title: 'Histogram of Transition to Impervious Surface (Year Codes)'
+});
+
+print(histogram);
+
+```
