@@ -19,6 +19,8 @@ What's on offer:
 
 ![data computation A P I applications graphic](imagesEngine/EngineOfferings.JPG)
 
+The [Google Earth Engine Homepage](https://developers.google.com/earth-engine) is where you can launch into this adventure and find all kinds of resources, but this tutorial can be a streamlined way to get started.
+
 You have to apply to have one (and only one) Google account approved for access. Do read the [Terms of Service](https://earthengine.google.com/terms/) carefully.
 
 NOTE: *This tutorial is in the context of nonprofit, research, and education use. Commercial applications of Google Earth Engine require a paid commercial license.*
@@ -29,21 +31,38 @@ And once you sign up, you'll have access to the code editor shown above where yo
 
 ## The Earth Engine Data Catalog
 
-https://developers.google.com/earth-engine/datasets
+The candy store of planetary data is here: https://developers.google.com/earth-engine/datasets
 
 ## Data
 
-### Types
+In case you're not familiar with data that is normally used in geospatial research, there are basically two *main* classes:
+- Raster:  Think of pixels in a digital photograph or ones assigned an elevation value in a digital elevation model (DEM)
+- Vector:  Think about "drawn" points, lines or polygons that could represent points of interest (POIs), streams, or civic boundaries
 
-Image
+### Data types you'll see in Earth Engine
 
-Vector
+"Images" - These are the raster layers
 
-Load your own!
+"Feature Collections" - These are the vector layers, where one feature might be a single state like Alaska in a feature collection of all the U.S. states.
+
+Load your own! - These are stored in your "Assests" private folders
 - Shapefiles
 - CSVs (lat/lon columns, or spatial geometry column such as geoJSON)
 
-### Satellites
+### Satellites = the bread and butter of image data in Earth Engine
+
+Knowledge about the satellites that supply the bulk of the data to this platform will help you grasp the kind of analysis that is possible. Aspects to think about for each one:
+- Launch date
+- Decommision date (if applicable)
+- Temporal coverage
+- Spatial coverage
+- Bands
+
+Here are some resources for some of the main ones:
+- Landsat series
+- MODIS
+- Sentinal
+- STRM
 
 ## The Code Editor
 
@@ -60,11 +79,11 @@ https://code.earthengine.google.com/
 |Asset manager for private data | | |
 
 
-
-
 ## Getting Started
 
-## Javascript
+Request access to Google Earth Engine
+
+## Javascript meh?
 
 ## Examples
 
