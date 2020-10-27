@@ -31,13 +31,15 @@ And once you sign up, you'll have access to the code editor shown above where yo
 
 ## The Earth Engine Data Catalog
 
-The candy store of planetary data is here: https://developers.google.com/earth-engine/datasets
+The candy store of planetary data is here!: https://developers.google.com/earth-engine/datasets
 
 ## Data
 
-In case you're not familiar with data that is normally used in geospatial research, there are basically two *main* classes:
+In case you're not familiar with data normally used in geospatial data science, there are basically two *main* classes:
 - Raster:  Think of pixels in a digital photograph or ones assigned an elevation value in a digital elevation model (DEM)
 - Vector:  Think about "drawn" points, lines or polygons that could represent points of interest (POIs), streams, or civic boundaries
+
+Geospatial analysis involves geoprocessing (querying, statistical analysis, clipping, spatial joining, etc.) these data layers in defined workflows developed for a particular research question. Some of these processes will be shown in the examples at the end. What those questions might be can be spurred by the data available, so have fun exploring the catalog (or heck, exploring Google Earth and THEN Earth Engine's data catalog)!
 
 ### Data types you'll see in Earth Engine
 
@@ -45,13 +47,13 @@ In case you're not familiar with data that is normally used in geospatial resear
 
 "Feature Collections" - These are the vector layers, where one feature might be a single state like Alaska in a feature collection of all the U.S. states.
 
-Load your own! - These are stored in your "Assests" private folders
+Load your own! - These are stored in your "Assets" and remain private
 - Shapefiles
 - CSVs (lat/lon columns, or spatial geometry column such as geoJSON)
 
-### Satellites = the bread and butter of image data in Earth Engine
+### Remote Sensing = the bread and butter of image data in Earth Engine
 
-Knowledge about the satellites that supply the bulk of the data to this platform will help you grasp the kind of analysis that is possible. Aspects to think about for each one:
+Knowledge about the missions that supply the bulk of the data to this platform will help you grasp the kind of analysis that is possible. Aspects to think about for each one:
 - Launch date
 - Decommision date (if applicable)
 - Temporal coverage
@@ -59,10 +61,10 @@ Knowledge about the satellites that supply the bulk of the data to this platform
 - Bands
 
 Here are some resources for some of the main ones:
-- Landsat series
-- MODIS
-- Sentinal
-- STRM
+
+| [Landsat](https://www.usgs.gov/core-science-systems/nli/landsat/landsat-satellite-missions) | [MODIS](https://modis.gsfc.nasa.gov/about/) | [Sentinal](https://sentinel.esa.int/web/sentinel/home) | [SRTM](https://www2.jpl.nasa.gov/srtm/index.html) |
+
+
 
 ## The Code Editor
 
