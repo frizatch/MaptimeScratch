@@ -13,7 +13,7 @@ But this is Google Earth ENGINE:
 
 ![Google Earth Engine G U I](imagesEngine/GoogleEarthEngineSnapshot.JPG)
 
-It's planetary-scale platform for doing data science. Google Earth Engine allows users to run algorithms on georeferenced imagery and vectors stored on Google's infrastructure. Instead of being an observer, you have the ability to conduct spatial analysis on the global datasets found in Earth Engine's data catalog (as well as on your own datasets!).
+It's a planetary-scale platform for doing data science. Google Earth Engine allows users to run algorithms on georeferenced imagery and vectors stored on Google's infrastructure. Instead of being just an observer, you have the ability to conduct spatial analysis on the global datasets found in Earth Engine's data catalog. You can also load your own data for your projects, or even submit a request a particular dataset you'd like Earth Engine to host.
 
 What's on offer:
 
@@ -79,4 +79,28 @@ https://code.earthengine.google.com/
 
 ### Colorado Elevation
 
-### Urban Albedo
+  // Plot a histogram of elevation in Colorado.
+
+  var elevation = ee.Image('CGIAR/SRTM90_V4');
+  var colorado = ee.Geometry.Rectangle({
+   coords: [-109.05, 37, -102.05, 41],
+   geodesic: false
+  });
+
+  // Generate the histogram data.  Use minBucketWidth for nice sized buckets.
+  var histogram = ui.Chart.image.histogram({
+   image: elevation,
+   region: colorado,
+   scale: 200,
+   minBucketWidth: 300
+  });
+  histogram.setOptions({
+   title: 'Histogram of Elevation in Colorado (meters)'
+  });
+
+  print(histogram);
+
+  Map.addLayer(elevation.clip(colorado));
+  Map.setCenter(-107, 39, 6);
+
+### Urban Areas Impervious Surface Growth (does it ever shrink?)
