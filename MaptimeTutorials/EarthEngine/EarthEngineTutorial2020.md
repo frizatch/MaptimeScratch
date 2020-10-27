@@ -101,7 +101,7 @@ https://code.earthengine.google.com/
 ![Message regarding naming folders](imagesEngine/EarthEngineFolders_sm.jpg)
 
 *Load code examples or write your own and start playing!*
-![script example](imageEngine/EarthEngineAddToMap_code_sm.JPG)
+![script example](imageEngine/EarthEngineAddToMap_code_sm.jpg)
 - Look under "Examples" under the Scripts tab and click on them to auto-load scripts
 - The Docs tab has a great guide for API calls. Here's an example for a histogram function and needed/optional arguments:
 ![list of U I functions](imagesEngine/ChartImageHistogram_hl.png) Click ----> ![arguments for histogram function](imagesEngine/EarthEngineChartHistogramDoc_sm.png)
