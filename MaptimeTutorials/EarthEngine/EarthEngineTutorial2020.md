@@ -33,7 +33,7 @@ And once you sign up, you'll have access to the code editor shown above where yo
 
 The candy store of planetary data is here!: https://developers.google.com/earth-engine/datasets
 
-## Data
+## Geospatial data
 
 In case you're not familiar with data normally used in geospatial data science, there are basically two *main* classes:
 - Raster:  Think of pixels in a digital photograph or ones assigned an elevation value in a digital elevation model (DEM)
