@@ -5,11 +5,11 @@
 
 We're mostly familiar with Google Earth: Flying around 2D and 3D renderings of the globe to explore information and imagery of our planet. You can add KML data to it and create projects of discovery. Pretty good stuff.
 
-This is Google Earth:
+**This is Google Earth:**
 
 ![Google Earth G U I](imagesEngine/GoogleEarthSnapshot.JPG)
 
-But this is Google Earth ENGINE:
+**But this is Google Earth ENGINE:**
 
 ![Google Earth Engine G U I](imagesEngine/GoogleEarthEngineSnapshot.JPG)
 
@@ -50,23 +50,16 @@ Load your own!
 Use your registered Google account to access the code editor here:
 https://code.earthengine.google.com/
 
+![Labeled Earth Engine U I](imagesEngine/EngineUIgrabNVAZ_labeled.PNG)
 
-*CENTER panel*
-- Javascript code editor
+| Left panel | Center panel | Right panel | Bottom panel |
+| ------------ | ---------- | ----------- | ------------ |
+|Code Examples |(Javascript) Code editor | Inspector for querying the map (gives info about the layers) | Map Output! (Base Map + layers added from script)|
+|Your saved scripts | | Output console | |
+|Searchable API reference | | Manager for long-running tasks | |
+|Asset manager for private data | | |
 
-*LEFT panel*
-- Code examples
-- Your saved scripts
-- Searchable API reference
-- Asset manager for private data
 
-*RIGHT panel* 
-- Inspector for querying the map (gives info about the layers)
-- Output console
-- Manager for long-running tasks
-
-*BOTTOM panel*
-- Map Output! (Base map plus layers added from script)
 
 
 ## Getting Started
