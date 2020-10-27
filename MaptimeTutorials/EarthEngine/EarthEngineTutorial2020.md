@@ -1,10 +1,12 @@
-# Introduction to Google Earth Engine ![Google Earth Engine Logo](imagesEngine/earth-engine-logo_sm.png)
+![Google Earth Engine Logo](imagesEngine/earth-engine-logo_sm.png)
+# Introduction to Google Earth Engine
 
 ## What is Google Earth Engine?
 
 We're all fairly familiar with Google Earth: Flying around 2D and 3D renderings of the globe to explore information and imagery of our planet. You can add KML data to it and create projects of discovery. Pretty good stuff.
 
 This is Google Earth:
+![Google Earth G U I](imagesEngine/GoogleEarthSnapshot.jpeg)
 
 But this is Google Earth ENGINE:
 
