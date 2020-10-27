@@ -8,7 +8,9 @@ This is Google Earth:
 
 But this is Google Earth ENGINE:
 
-It's planetary-scale platform for doing data science. Google Earth Engine allows users to run algorithms on georeferenced imagery and vectors stored on Google's infrastructure.
+It's planetary-scale platform for doing data science. Google Earth Engine allows users to run algorithms on georeferenced imagery and vectors stored on Google's infrastructure. You have to apply to have one (and only one!) Google account approved for access. Do read the [Terms of Service](https://earthengine.google.com/terms/) carefully.
+
+NOTE: *This tutorial is in the context of nonprofit, research, and education use. Commercial applications of Google Earth Engine require a paid commercial license.*
 
 A good place for more orientation: https://earthengine.google.com/faq/
 
