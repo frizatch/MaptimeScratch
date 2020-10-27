@@ -81,22 +81,22 @@ https://code.earthengine.google.com/
 
 ## Getting Started
 
-1. Request access to Google Earth Engine
+Request access to Google Earth Engine
 - There's a handy button for that here: https://developers.google.com/earth-engine/
 
-2. Wait for your approval email
+Wait for your approval email
 - This will come to your one account registered with Google
 - It comes pre-loaded with helpful links
 
-3. Open the Code Editor
+Open the Code Editor
 - https://code.earthengine.google.com/
 
-4. Create a home folder and subfolders
+Create a home folder, repositories and folders under "Scripts" tab > Owner
 - You won't be able to change the name of your home folder, so choose wisely!
-![Message regarding naming home folder](imagesEngine/EarthEngineHomeFolder.JPG)
-- Subfolders can project specific
-- Recommendation: create a "sandbox" or "scratch" folder!
-![Message regarding naming folders](imagesEngine/EarthEngineFolders.JPG)
+![Message regarding naming home folder](imagesEngine/EarthEngineHomeFolder_sm.JPG)
+- Repositories can project specific
+- Recommendation: create a "sandbox" or "scratch" repository!
+![Message regarding naming folders](imagesEngine/EarthEngineFolders_sm.JPG)
 
 ## Javascript meh?
 
