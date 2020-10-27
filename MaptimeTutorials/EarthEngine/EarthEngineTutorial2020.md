@@ -97,13 +97,14 @@ https://code.earthengine.google.com/
 - You won't be able to change the name of your home folder, so choose wisely!
 
 ![Message regarding naming home folder](imagesEngine/EarthEngineHomeFolder_sm.jpg)
-- Repositories can project specific
+- Repositories can be project specific, topic specific ... just have a consistent system.
 - Recommendation: create a "sandbox" or "scratch" repository!
+- Create individual folders and files in each repository as needed.
 
 ![Message regarding naming folders](imagesEngine/EarthEngineFolders_sm.jpg)
 
 *Load code examples or write your own and start playing!*
-![script example](imageEngine/EarthEngineAddToMap_code_sm.jpg)
+![script example](imagesEngine/EarthEngineAddToMap_code_sm.jpg)
 - Look under "Examples" under the Scripts tab and click on them to auto-load scripts
 - The Docs tab has a great guide for API calls. Here's an example for a histogram function and needed/optional arguments:
 ![list of U I functions](imagesEngine/ChartImageHistogram_hl.png) Click ----> ![arguments for histogram function](imagesEngine/EarthEngineChartHistogramDoc_sm.png)
