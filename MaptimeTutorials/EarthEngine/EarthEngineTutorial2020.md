@@ -1,4 +1,4 @@
-# Introduction to Google Earth Engine
+# Introduction to Google Earth Engine ![Google Earth Engine Logo](imagesEngine/earth-engine-logo_sm.png)
 
 ## What is Google Earth Engine?
 
