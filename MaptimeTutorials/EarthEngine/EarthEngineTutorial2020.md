@@ -81,11 +81,40 @@ https://code.earthengine.google.com/
 
 ## Getting Started
 
-Request access to Google Earth Engine
+1. Request access to Google Earth Engine
+- There's a handy button for that here: https://developers.google.com/earth-engine/
+
+2. Wait for your approval email
+- This will come to your one account registered with Google
+- It comes pre-loaded with helpful links
+
+3. Open the Code Editor
+- https://code.earthengine.google.com/
+
+4. Create a home folder and subfolders
+- You won't be able to change the name of your home folder, so choose wisely!
+![Message regarding naming home folder](imagesEngine/EarthEngineHomeFolder.JPG)
+- Subfolders can project specific
+- Recommendation: create a "sandbox" or "scratch" folder!
+![Message regarding naming folders](imagesEngine/EarthEngineFolders.JPG)
 
 ## Javascript meh?
 
 ## Examples
+
+### Printing to the Console
+
+You can print output directly in the console panel. Try pasting this in and check the console tab:
+
+```
+print('Hello world!');
+```
+Or you can print metadata from an image collection and see it!:
+
+```
+print(ee.Image('LANDSAT/LC08/C01/T1/LC08_044034_20140318'));
+```
+
 
 ### Loading a Satellite Image
 
