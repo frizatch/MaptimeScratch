@@ -3,7 +3,7 @@
 
 ## What is Google Earth Engine?
 
-We're all fairly familiar with Google Earth: Flying around 2D and 3D renderings of the globe to explore information and imagery of our planet. You can add KML data to it and create projects of discovery. Pretty good stuff.
+We're mostly familiar with Google Earth: Flying around 2D and 3D renderings of the globe to explore information and imagery of our planet. You can add KML data to it and create projects of discovery. Pretty good stuff.
 
 This is Google Earth:
 
