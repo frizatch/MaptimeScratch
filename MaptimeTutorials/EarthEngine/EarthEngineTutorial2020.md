@@ -50,7 +50,7 @@ Load your own!
 Use your registered Google account to access the code editor here:
 https://code.earthengine.google.com/
 
-![Labeled Earth Engine U I](imagesEngine/EngineUIgrabNVAZ_labeled.PNG)
+![Labeled Earth Engine U I](imagesEngine/EngineUIgrabNVAZ_labeled.png)
 
 | Left panel | Center panel | Right panel | Bottom panel |
 | ------------ | ---------- | ----------- | ------------ |
