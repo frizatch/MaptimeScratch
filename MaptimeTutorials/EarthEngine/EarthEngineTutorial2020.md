@@ -48,6 +48,8 @@ Geospatial analysis involves geoprocessing (querying, statistical analysis, clip
 "Feature Collections" - These are the vector layers, where one feature might be a single state like Alaska in a feature collection of all the U.S. states.
 
 Load your own! - These are stored in your "Assets" and remain private
+- GeoTIFF
+- TFRecord
 - Shapefiles
 - CSVs (lat/lon columns, or spatial geometry column such as geoJSON)
 
