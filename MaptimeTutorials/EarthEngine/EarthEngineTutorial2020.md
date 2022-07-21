@@ -116,7 +116,7 @@ https://code.earthengine.google.com/
 
 ### Printing to the Console
 
-You can print output directly in the console panel. Try pasting this in and check the console tab:
+You can print output directly in the console panel. Try pasting this in, hitting Run, then checking the console tab:
 
 ```
 print('Hello world!');
