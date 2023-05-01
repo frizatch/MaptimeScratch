@@ -31,7 +31,7 @@ And once you sign up, you'll have access to the code editor shown above where yo
 
 ## The Earth Engine Data Catalog
 
-The candy store of planetary data is here!: https://developers.google.com/earth-engine/datasets
+The candy store of earth observation (EO) data is here!: https://developers.google.com/earth-engine/datasets
 
 ## Geospatial data
 
