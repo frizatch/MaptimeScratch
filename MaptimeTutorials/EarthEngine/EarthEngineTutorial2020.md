@@ -187,6 +187,7 @@ var tracts = ee.FeatureCollection('TIGER/2010/Tracts_DP1');
 // Look under "properties" and enter unique tract geoid below
 
 // var tractgeoid = '08031001902'; //Auraria CO
+// var tractgeoid = '49035113107'; //DIA CO
 // var tractgeoid = '49035113107'; //Herriman UT
 var tractgeoid = '08031001902';
 
@@ -215,6 +216,7 @@ var impervvis = {
 
 // Reset lon & lat and zoom level to tract of interest.
 // Map.setCenter(-105.01, 39.747, 14.5); //Auraria
+// Map.setCenter(-104.70, 39.855, 12.5); //DIA
 // Map.setCenter(-112.01, 40.515, 13); //Herriman
 
 // Choose layers you want to visualize on the map by uncommenting line:
