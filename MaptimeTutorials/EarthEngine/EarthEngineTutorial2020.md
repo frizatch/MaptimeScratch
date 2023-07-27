@@ -187,7 +187,7 @@ var tracts = ee.FeatureCollection('TIGER/2010/Tracts_DP1');
 // Look under "properties" and enter unique tract geoid below
 
 // var tractgeoid = '08031001902'; //Auraria CO
-// var tractgeoid = '49035113107'; //DIA CO
+// var tractgeoid = '08031980000'; //DIA CO
 // var tractgeoid = '49035113107'; //Herriman UT
 var tractgeoid = '08031001902';
 
